@@ -1,6 +1,20 @@
 import type { Config } from "tailwindcss";
 
 export const primatives = {
+  gray: {
+    "25": "#F1F1F1",
+    "50": "#E0E0E0",
+    "100": "#CECECE",
+    "200": "#BDBDBD",
+    "300": "#ACACAC",
+    "400": "#9A9A9A",
+    "500": "#898989",
+    "600": "#777777",
+    "700": "#5C5C5C",
+    "800": "#424242",
+    "900": "#272727",
+    "950": "#0C0C0C",
+  },
   cornflower: {
     "25": "#E9ECF1",
     "50": "#CDD3E0",
@@ -56,6 +70,9 @@ const config: Config = {
       // "special-heading": "#C00",
     },
     extend: {
+      textColor: {
+        DEFAULT: '#c00', // Replace with your desired color code
+      },
       borderRadius: {
         "4xl": "2rem",
       },
@@ -72,6 +89,7 @@ const config: Config = {
         heading4: "3rem",
         heading5: "2rem",
         heading6: "1rem",
+        subheading1: "1.5rem",
         mainNavLink: "1.75rem", // 28px,
       },
       spacing: {
@@ -83,8 +101,6 @@ const config: Config = {
         headingAlt: ["var(--font-robotoSlab)", "serif"],
         sans: ["var(--font-passionone)", "sans-serif"],
         serif: ["var(--font-robotoSlab)", "serif"],
-        // sans: ["Graphik", "sans-serif"],
-        // serif: ["Merriweather", "serif"],
       },
       colors: {
         // Semantic Tokens
@@ -98,6 +114,9 @@ const config: Config = {
             primary: primatives.mahogany[900],
             secondary: primatives.cornflower[900],
             tertiary: primatives.cornflower[500],
+          },
+          bodytext: {
+            primary: primatives.gray[900],
           },
           border: {
             primary: primatives.mahogany[200],
@@ -114,8 +133,8 @@ const config: Config = {
       },
       gridTemplateColumns: {
         // Complex site-specific column configuration
-        'about': '1fr 2fr',
-      }
+        about: "1fr 2fr",
+      },
     },
   },
   plugins: [],

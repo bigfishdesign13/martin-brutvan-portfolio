@@ -17,13 +17,17 @@
 body {
   align-items: center;
   background: var(--background);
-  color: var(--foreground);
   display: flex;
   flex-direction: column;
-  font-family: var(--font-robotoSlab), Arial, Helvetica, sans-serif;
+  font-family: var(--font-robotoSlab), serif;
+  font-size: 1.125rem;
+  line-height: 1.75;
 }
 
 @layer components {
+  body {
+    @apply text-light-bodytext-primary;
+  }
   .btn-main-nav {
     @apply py-1 px-4 text-mainNavLink text-light-link-primary hover:text-light-link-secondary;
   }
@@ -42,15 +46,17 @@ body {
   .heading4 {
     @apply text-heading4;
   }
+  .heading5 {
+    @apply text-heading5;
+  }
+  .heading6 {
+    @apply text-heading6;
+  }
+  .subheading1 {
+    @apply text-subheading1 text-light-heading-primary;
+  }
 }
 
-/* h2 {
-  font-size: 34px;
-  font-weight: 400;
-}
-.heading1 {
-  font-size: 84px;
-}
 strong {
-  font-weight: 700;
-} */
+  font-weight: 900;
+}
