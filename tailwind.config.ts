@@ -58,21 +58,7 @@ const config: Config = {
       lg: "1024px",
       xl: "1280px",
     },
-    colors: {
-      // purple: "#7e5bef",
-      // pink: "#ff49db",
-      // orange: "#ff7849",
-      // green: "#13ce66",
-      // yellow: "#ffc82c",
-      // "gray-dark": "#273444",
-      // gray: "#8492a6",
-      // "gray-light": "#d3dce6",
-      // "special-heading": "#C00",
-    },
     extend: {
-      textColor: {
-        DEFAULT: '#c00', // Replace with your desired color code
-      },
       borderRadius: {
         "4xl": "2rem",
       },
@@ -109,6 +95,7 @@ const config: Config = {
             primary: primatives.cornflower[25],
             secondary: primatives.cornflower[50],
             tertiary: primatives.cornflower[100],
+            menu: primatives.mahogany[25],
           },
           heading: {
             primary: primatives.mahogany[900],
@@ -134,6 +121,9 @@ const config: Config = {
       gridTemplateColumns: {
         // Complex site-specific column configuration
         about: "1fr 2fr",
+        // projects: "1fr 1fr 1fr",
+        // projects: "repeat(3, 1fr);",
+        projects: "repeat(1, 1fr);",
       },
     },
   },

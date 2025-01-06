@@ -23,9 +23,9 @@ export default function Home() {
             design technologist
           </Heading>
           <p className="text-light-heading-secondary text-[22px] font-bold">
-            developer
-            <span className="mx-2 text-light-border-primary">&bull;</span>
             designer
+            <span className="mx-2 text-light-border-primary">&bull;</span>
+            engineer
             <span className="mx-2 text-light-border-primary">&bull;</span>
             communicator
           </p>

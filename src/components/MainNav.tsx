@@ -50,16 +50,16 @@ const MainNav = () => {
         about
       </Link>
       <div className="border-s-4 border-light-border-primary" />
-      <Link className="btn-main-nav" href="/projects">
-        projects
+      <Link className="btn-main-nav" href="/work">
+        work
       </Link>
       <div className="border-s-4 border-light-border-primary" />
       <Link
         className="btn-main-nav"
-        href="/Martin-Brutvan-Resume.pdf"
+        href="/download/Martin-Brutvan-Resume.pdf"
         target="_blank"
       >
-        resume
+        r&eacute;sum&eacute;
       </Link>
     </nav>
   );

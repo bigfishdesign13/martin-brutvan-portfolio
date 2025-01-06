@@ -23,6 +23,9 @@ body {
   font-size: 1.125rem;
   line-height: 1.75;
 }
+p:not(:first-of-type) {
+  margin-top: 1rem;
+}
 
 @layer components {
   body {
@@ -35,18 +38,23 @@ body {
     @apply text-display1;
   }
   .heading1 {
+    line-height: 1.3;
     @apply text-heading1;
   }
   .heading2 {
+    line-height: 1.3;
     @apply text-heading2;
   }
   .heading3 {
+    line-height: 1.3;
     @apply text-heading3;
   }
   .heading4 {
+    line-height: 1.3;
     @apply text-heading4;
   }
   .heading5 {
+    line-height: 1.3;
     @apply text-heading5;
   }
   .heading6 {
@@ -54,6 +62,9 @@ body {
   }
   .subheading1 {
     @apply text-subheading1 text-light-heading-primary;
+  }
+  .full-story a {
+    @apply text-light-link-primary hover:text-light-link-secondary transition-colors underline underline-offset-[3px] decoration-1 decoration-dotted;
   }
 }
 

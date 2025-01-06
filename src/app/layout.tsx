@@ -5,6 +5,7 @@ import Header from "../components/Header";
 // import MainNav from "../components/MainNav";
 import { Passion_One, Roboto_Slab } from "next/font/google";
 
+
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
 //   variable: "--font-geist-sans",
@@ -51,7 +52,8 @@ export default function RootLayout({
         className={`${passionOne.variable} ${robotoSlab.variable} bg-light-surface-primary antialiased`}
       >
         <Header />
-        <main className="flex w-full max-w-screen-lg bg-light-surface-primary px-4 mt-16 justify-between items-center">
+        {/* <main className="flex flex-col w-full max-w-screen-lg bg-light-surface-primary px-4 mt-16 justify-between items-center"> */}
+        <main className="flex flex-col w-full max-w-screen-lg bg-light-surface-primary px-4 py-20 mt-16">
           {children}
         </main>
       </body>
