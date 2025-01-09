@@ -1,33 +1,8 @@
 import React from "react";
 import Heading from "./Heading";
 import Image from "next/image";
-import SkillsList from "./SkillsList";
+import SkillsList, { SkillTypes } from "./SkillsList";
 import styles from "./ProjectCard.module.css";
-
-export type SkillTypes =
-  | "Accessibility"
-  | "Branding"
-  | "CSS/SCSS"
-  | "Database design"
-  | "Documentation"
-  | "Formstack"
-  | "HTML"
-  | "JavaScript"
-  | "jQuery"
-  | "mySQL"
-  | "Photography"
-  | "PHP"
-  | "React"
-  | "Responsive"
-  | "SCORM"
-  | "SEO"
-  | "Social Media"
-  | "Storybook"
-  | "Streaming video"
-  | "Typescript"
-  | "UX design"
-  | "Visual design"
-  | "WordPress";
 
 export interface ProjectCardProps {
   /** String that adds an aria-label or appends to an existing aria-label for

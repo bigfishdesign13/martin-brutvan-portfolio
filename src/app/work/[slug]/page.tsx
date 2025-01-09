@@ -1,4 +1,5 @@
 import Heading from "../../../components/Heading";
+import ProjectHeroImage from "../../../components/ProjectHeroImage";
 import SkillsList from "../../../components/SkillsList";
 import data, { WorkItemProps } from "../../data/data";
 
@@ -24,11 +25,10 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
   //     : null;
   // });
 
-  const { fullStory, skills, title } = filteredDataAlt[0];
+  const { fullStory, heroImage, skills, title } = filteredDataAlt[0];
 
   return (
     <>
-      {/* <h1>Title: {filteredData[0].title}</h1> */}
       <Heading
         className="text-light-heading-secondary mb-4 leading-[1.2]"
         fontFamily="alt"
@@ -38,6 +38,7 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
         {title}
       </Heading>
       <SkillsList skills={skills} />
+      <ProjectHeroImage alt={heroImage.alt} src={heroImage.src} />
       <div className="full-story">{fullStory}</div>
     </>
   );

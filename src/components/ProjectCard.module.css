@@ -5,7 +5,7 @@
   /* background-color: red; */
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   transition: transform 250ms;
   &:hover {
     /* transform: scale(1.015); */

@@ -1,48 +1,74 @@
 import Heading from "../../components/Heading";
 import Image from "next/image";
 import Link from "next/link";
-import { SkillTypes } from "../../components/ProjectCard";
+import { SkillTypes } from "../../components/SkillsList";
+
+export interface HeroImageProps {
+  alt: string;
+  src: string;
+}
 
 export interface WorkItemProps {
   fullStory: string | JSX.Element;
+  heroImage: HeroImageProps;
   image: string;
   skills: SkillTypes[];
   slug: string;
   summary: string;
   title: string;
 }
+
 export interface WorkDataProps {
   work: WorkItemProps[];
 }
 
-// export interface WorkDataProps {
-//   filter(arg0: (workItem: WorkItemProps[]) => any): unknown;
-//   map(arg0: (workItem: WorkItemProps, key: number) => import("react").JSX.Element): unknown;
-//   [index: number]: WorkItemProps;
-// }
-
-// interface WorkDataProps extends Array<WorkItemProps> {}
-
-const data = {
+const data: WorkDataProps = {
   work: [
     {
       fullStory: (
         <>
-          <Image
-            alt="Reservoir Design System"
-            className="bg-light-surface-tertiary mb-8 rounded-2xl"
-            height={320}
-            src="/work/reservoir-hero-image.png"
-            width={1280}
-          />
           <p className="subheading1 bg-light-surface-primary">
             The <strong>NYPL Reservoir Design System</strong> is the base for
             the UI/UX design and front-end development of the NYPL web
-            applications. As the sole <strong>design technologiest</strong> at
+            applications. As the sole <strong>design technologist</strong> at
             NYPL, I organize and contribute to all aspects of the design system,
             including product planning, UX and visual design, development, and
             writing detailed documentation.
           </p>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Links
+          </Heading>
+          <ul className="mt-4">
+            <li>
+              <Link
+                href="https://github.com/NYPL/nypl-design-system"
+                target="_blank"
+              >
+                Reservoir GitHub repo
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.npmjs.com/package/@nypl/design-system-react-components"
+                target="_blank"
+              >
+                Reservoir npm package
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://nypl.github.io/nypl-design-system/reservoir/v3"
+                target="_blank"
+              >
+                Reservoir Storybook
+              </Link>
+            </li>
+          </ul>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Background
+          </Heading>
           <p>
             While I am highly effective working closely with designers and
             engineers across the organization to create and enhance the design
@@ -282,38 +308,13 @@ const data = {
             trust&mdash;that continuously improve the NYPL Reservoir Design
             System.
           </p>
-          <Heading className="mt-8" fontFamily="alt" size="heading4">
-            Links
-          </Heading>
-          <ul className="mt-4">
-            <li>
-              <Link
-                href="https://github.com/NYPL/nypl-design-system"
-                target="_blank"
-              >
-                Reservoir GitHub repo
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://www.npmjs.com/package/@nypl/design-system-react-components"
-                target="_blank"
-              >
-                Reservoir npm package
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="https://nypl.github.io/nypl-design-system/reservoir/v3"
-                target="_blank"
-              >
-                Reservoir Storybook
-              </Link>
-            </li>
-          </ul>
         </>
       ),
-      image: "/work/reservoir.svg",
+      heroImage: {
+        alt: "NYPL Reservoir Design System",
+        src: "/work/reservoir-hero.jpg",
+      },
+      image: "/work/reservoir-thumbnail.svg",
       skills: [
         "Accessibility",
         "React",
@@ -325,56 +326,300 @@ const data = {
       ],
       slug: "nypl-reservoir-design-system",
       summary:
-        "The Reservoir Design System is the base for the UI/UX design and front-end development of the NYPL web application.",
+        "The base for the UI/UX design and front-end development of web applications for the New York Public Library.",
       title: "NYPL Reservoir Design System",
     },
     {
-      image: "/work/wes.svg",
-      skills: ["HTML", "CSS/SCSS", "JavaScript", "Responsive", "WordPress"],
+      fullStory: (
+        <>
+          <p className="subheading1 bg-light-surface-primary">
+            The Washington Episcopal School Strategic Plan website utilizes a{" "}
+            <strong>non-traditional design</strong> to align the site&apos;s
+            look and feel with the exciting nature of the message the site aims
+            to relay. Built using the <strong>WordPress CMS</strong>, the
+            intricate layout required meticulous implementation of enhanced page
+            builder tools. To further the sites unique nature, custom{" "}
+            <strong>parallax</strong> coding was used to create movement and
+            playfulness throughout the site.
+          </p>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Links
+          </Heading>
+          <ul className="mt-4">
+            <li>
+              <Link href="https://wesstrategicplan.com" target="_blank">
+                WES Strategic Plan website
+              </Link>
+            </li>
+          </ul>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Background
+          </Heading>
+          <p>
+            The designs for this site were provided by a third-party firm. It
+            was my responsibility to create the site using WordPress to
+            execution the visual designs and site content. I worked closely with
+            the design firm to make design recommendations for improved
+            aesthetics and accessibility.
+          </p>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Execution
+          </Heading>
+          <p>
+            The limited scope of the site content was best executed with the
+            Total WordPress theme. The granular visual style controls available
+            in the page builder tools were perfect for executing the complex
+            page designs, allowing for manual placement and treatment of
+            elements throughout the layout on each page.
+          </p>
+
+          <Heading className="mt-8" fontFamily="alt" level="h3" size="heading5">
+            Custom parallax
+          </Heading>
+          <p>
+            Due to the unique treatment of design elements throughout the site,
+            a blanket parallax treatment for all of the dynamic elements was not
+            possible. To execute the paralax treatment to meet my expectations,
+            I employed a custom jQuery plugin and added custom parallax styles
+            to each element that was to be set in motion.
+          </p>
+
+          <Heading className="mt-8" fontFamily="alt" level="h3" size="heading5">
+            Mobile
+          </Heading>
+          <p>
+            The responsive treatment for the mobile viewport required further
+            style and parallax customizations for most elements throughout the
+            site.
+          </p>
+        </>
+      ),
+      heroImage: {
+        alt: "The Washington Episcopal School Strategic Plan website",
+        src: "/work/wes-hero.jpg",
+      },
+      image: "/work/wes-thumbnail.svg",
+      skills: [
+        "HTML",
+        "CSS/SCSS",
+        "JavaScript",
+        "Responsive",
+        "WordPress",
+        "Accessibility",
+      ],
       slug: "wes-strategic-plan",
       summary:
-        "The website for the Washington Episcopal School Strategic Plan was built using the WordPress CMS. The site design is non-traditional and required meticulous implementation of enhanced page builder tools. Custom parallax coding was used to create movement and playfulness throughout the site.",
+        "A non-traditional site design that required meticulous implementation of enhanced page builder tools.",
       title: "WES Strategic Plan",
     },
     {
-      image: "/work/baacf.png",
-      skills: ["HTML", "CSS/SCSS", "JavaScript", "Responsive", "WordPress"],
+      fullStory: (
+        <>
+          <p className="subheading1 bg-light-surface-primary">
+            The Binghamton Arts &amp; Athletics Community Fund (BAACF) needed to
+            move fast to establish brand identity and get an online presence in
+            the form of a website and social media up and running. I worked
+            closely with the BAACF Board members to iterate over logo and
+            branding concepts, finalizing the logo and overall brand and
+            publishing a WordPress driven website within eights weeks.
+          </p>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Links
+          </Heading>
+          <ul className="mt-4">
+            <li>
+              <Link href="https://baacf.com" target="_blank">
+                BAACF website
+              </Link>
+            </li>
+          </ul>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Deliverables
+          </Heading>
+          <Heading className="mt-8" fontFamily="alt" level="h3" size="heading5">
+            Brand &amp; Logo
+          </Heading>
+          <Image
+            alt="BAACF brand"
+            className="p-8 mb-8"
+            height={1280}
+            src="/work/baacf-logo-specs.svg"
+            width={1280}
+          />
+          <div className="grid grid-cols-1 gap-8 mt-4 md:grid-cols-3">
+            <Image
+              alt="BAACF horizonal color logo"
+              className="p-8"
+              height={768}
+              src="/work/baacf-logo-horizontal-color.svg"
+              width={768}
+            />
+            <Image
+              alt="BAACF horizonal black logo"
+              className="p-8"
+              height={768}
+              src="/work/baacf-logo-horizontal-black.svg"
+              width={768}
+            />
+            <Image
+              alt="BAACF horizonal white logo"
+              className="p-8 bg-black"
+              height={768}
+              src="/work/baacf-logo-horizontal-white.svg"
+              width={768}
+            />
+            <Image
+              alt="BAACF vertical color logo"
+              className="p-8"
+              height={768}
+              src="/work/baacf-logo-vertical-color.svg"
+              width={768}
+            />
+            <Image
+              alt="BAACF vertical color logo"
+              className="p-8"
+              height={768}
+              src="/work/baacf-logo-vertical-black.svg"
+              width={768}
+            />
+            <Image
+              alt="BAACF vertical color logo"
+              className="p-8 bg-black"
+              height={768}
+              src="/work/baacf-logo-vertical-white.svg"
+              width={768}
+            />
+          </div>
+
+          <Heading className="mt-8" fontFamily="alt" level="h3" size="heading5">
+            Templates
+          </Heading>
+          <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-3">
+            <Image
+              alt="BAACF vertical color logo"
+              className="border border-light-border-tertiary drop-shadow-lg"
+              height={768}
+              src="/work/baacf-email-template.png"
+              width={768}
+            />
+            <Image
+              alt="BAACF vertical color logo"
+              className="border border-light-border-tertiary drop-shadow-lg"
+              height={768}
+              src="/work/baacf-leaders-day-flier-1.jpg"
+              width={768}
+            />
+            <Image
+              alt="BAACF vertical color logo"
+              className="border border-light-border-tertiary drop-shadow-lg"
+              height={768}
+              src="/work/baacf-leaders-day-flier-2.jpg"
+              width={768}
+            />
+          </div>
+
+          <Heading className="mt-8" fontFamily="alt" level="h3" size="heading5">
+            Social sharing
+          </Heading>
+          <Image
+            alt="BAACF social sharing image"
+            className="border border-light-border-tertiary drop-shadow-lg mt-8"
+            height={768}
+            src="/work/baacf-social-share-image.jpg"
+            width={768}
+          />
+        </>
+      ),
+      heroImage: {
+        alt: "The Binghamton Arts & Athletics Community Fund website",
+        src: "/work/baacf-hero.jpg",
+      },
+      image: "/work/baacf-thumbnail.png",
+      skills: [
+        "HTML",
+        "CSS/SCSS",
+        "JavaScript",
+        "Logo design",
+        "Responsive",
+        "WordPress",
+      ],
       slug: "baacf",
       summary:
-        "The Binghamton Arts & Athletics Community Fund needed to move fast to establish brand identity and get an online presence in the form of a website and social media up and running. I worked closely with the BAACF Board members to iterate over logo and branding concepts, finalizing the logo and overall brand and publishing a WordPress driven website within eights weeks.",
+        "A fast moving project that required a large set of deliverables.",
       title: "Binghamton Arts & Athletics Community Fund",
     },
     {
+      fullStory: (
+        <>
+          <p>Content...</p>
+        </>
+      ),
+      heroImage: {
+        alt: "NYPL Reservoir Design System",
+        src: "/work/reservoir-hero.jpg",
+      },
       image: "/work/baacf.png",
-      skills: ["CSS/SCSS", "HTML", "Javascript", "WordPress"],
+      skills: ["CSS/SCSS", "HTML", "JavaScript", "WordPress"],
       slug: "dreitonal",
       summary:
         "The Dreitonal project required a WordPress multilingual website. To simplify site maintenance, the menu system was enhanced to dynamically create links to the corresponding multilingual pages, allowing site content creators to focus on the content without having to spend extra time maintaining the site navigation.",
       title: "Dreitonal",
     },
     {
+      fullStory: (
+        <>
+          <p>Content...</p>
+        </>
+      ),
+      heroImage: {
+        alt: "NYPL Reservoir Design System",
+        src: "/work/reservoir-hero.jpg",
+      },
       image: "/work/baacf.png",
-      skills: ["CSS/SCSS", "Formstack", "HTML", "Javascript", "WordPress"],
+      skills: ["CSS/SCSS", "Formstack", "HTML", "JavaScript", "WordPress"],
       slug: "abortion-defense-network",
       summary:
         "The Abortion Defense Network site is built atop the WordPress CMS and incorporates tight intergration with Formstack, a third party form builder and data management system.",
       title: "Abortion Defense Network",
     },
     {
+      fullStory: (
+        <>
+          <p>Content...</p>
+        </>
+      ),
+      heroImage: {
+        alt: "NYPL Reservoir Design System",
+        src: "/work/reservoir-hero.jpg",
+      },
       image: "/work/baacf.png",
-      skills: ["Bonterra", "CSS/SCSS", "HTML", "Javascript", "WordPress"],
+      skills: ["CSS/SCSS", "HTML", "JavaScript", "WordPress"],
       slug: "newark-safety",
       summary:
         "The Newark Safety site is built using the WordPress CMS and incorporates tight intergration with Bonterra, a third party software package focused on data collection and social media engagement for nonprofit organizations.",
       title: "Newark Safety",
     },
     {
+      fullStory: (
+        <>
+          <p>Content...</p>
+        </>
+      ),
+      heroImage: {
+        alt: "NYPL Reservoir Design System",
+        src: "/work/reservoir-hero.jpg",
+      },
       image: "/work/baacf.png",
       skills: [
-        "CSS",
+        "CSS/SCSS",
         "Database design",
         "HTML",
-        "Javascript",
+        "JavaScript",
         "PHP",
         "Responsive",
       ],
@@ -384,12 +629,38 @@ const data = {
       title: "AGW Events",
     },
     {
+      fullStory: (
+        <>
+          <p>Content...</p>
+        </>
+      ),
+      heroImage: {
+        alt: "NYPL Reservoir Design System",
+        src: "/work/reservoir-hero.jpg",
+      },
+      image: "/work/baacf.png",
+      skills: ["Logo design", "Photography", "Print design", "Social media"],
+      slug: "the-count-a-musical",
+      summary:
+        "Logo design, print materials and event photography for The Count, A Musical.",
+      title: "The Count, A Musical",
+    },
+    {
+      fullStory: (
+        <>
+          <p>Content...</p>
+        </>
+      ),
+      heroImage: {
+        alt: "NYPL Reservoir Design System",
+        src: "/work/reservoir-hero.jpg",
+      },
       image: "/work/baacf.png",
       skills: [
-        "CSS",
-        "Graphic design",
+        "CSS/SCSS",
+        "Visual design",
         "HTML",
-        "Javascript",
+        "JavaScript",
         "jQuery",
         "SCORM",
         "Streaming video",
@@ -398,14 +669,6 @@ const data = {
       summary:
         "The eLearning Player is a single page application developed as the primary courseware to delive the core education products for SmartPros, A Kaplan Company. The original application was developed using Adobe Flash and eventually converted to a full native HTML application. The application offers varying course styles with multiple learning components and supports thousands of course titles.",
       title: "eLearning Player",
-    },
-    {
-      image: "/work/baacf.png",
-      skills: ["Logo design", "Photography", "Print design", "Social media"],
-      slug: "the-count-a-musical",
-      summary:
-        "Logo design, print materials and event photography for The Count, A Musical.",
-      title: "The Count, A Musical",
     },
   ],
 };

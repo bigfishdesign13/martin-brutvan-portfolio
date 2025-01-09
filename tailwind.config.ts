@@ -108,7 +108,7 @@ const config: Config = {
           border: {
             primary: primatives.mahogany[200],
             secondary: primatives.cornflower[200],
-            // tertiary: primatives.cornflower[500],
+            tertiary: primatives.cornflower[50],
           },
           link: {
             primary: primatives.cornflower[500],
