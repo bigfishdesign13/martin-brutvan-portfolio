@@ -13,8 +13,8 @@ export interface ProjectCardProps {
   /** Optional string to add am ID that other components can cross reference for
    * accessibility purposes */
   id?: string;
-  /** Path for the card's main image. */
-  image: string;
+  /** Path for the card's image. */
+  thumbnail: string;
   /** The skills used in within a project. */
   skills: SkillTypes[];
   /** The page slug. */
@@ -30,10 +30,10 @@ const ProjectCard = (props: ProjectCardProps) => {
     ariaLabel,
     className,
     id,
-    image,
     skills,
     slug,
     summary,
+    thumbnail,
     title,
     ...rest
   } = props;
@@ -49,12 +49,12 @@ const ProjectCard = (props: ProjectCardProps) => {
       {...rest}
     >
       <Image
-        className={styles.cardImage}
-        width={480}
-        height={480}
-        src={image}
-        alt={`Image for ${title}`}
+        alt={`${title} thumbnail`}
         aria-hidden
+        className={styles.cardImage}
+        height={480}
+        src={thumbnail}
+        width={480}
       />
       {/* <h3>{title}</h3> */}
       <div>

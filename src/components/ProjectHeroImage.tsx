@@ -16,7 +16,7 @@ export interface ProjectHeroImageProps {
 
 const ProjectHeroImage = (props: ProjectHeroImageProps) => {
   const { alt, className, id, src, ...rest } = props;
-  const finalClassName = `bg-light-surface-tertiary mb-8 rounded-2xl border border-light-border-tertiary ${className}`;
+  const finalClassName = `bg-light-surface-tertiary mb-8 rounded-lg border border-light-border-tertiary ${className}`;
 
   return (
     <Image

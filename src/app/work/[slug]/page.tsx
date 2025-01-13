@@ -3,29 +3,29 @@ import ProjectHeroImage from "../../../components/ProjectHeroImage";
 import SkillsList from "../../../components/SkillsList";
 import data, { WorkItemProps } from "../../data/data";
 
+// Define slug values to use for build
+export async function generateStaticParams() {
+  const workData = data.work;
+  return workData.map((workItem: WorkItemProps) => ({
+    slug: workItem.slug,
+    fullStory: workItem.fullStory,
+    heroImage: workItem.heroImage,
+    introduction: workItem.introduction,
+    skills: workItem.skills,
+    title: workItem.title,
+  }));
+}
+
 async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const passedSlug = (await params).slug;
   const workData = data.work;
-  const filteredDataAlt: WorkItemProps[] = workData.filter(
+  const filteredData: WorkItemProps[] = workData.filter(
     (workItem: WorkItemProps) => {
-      console.log(workItem.slug);
-      console.log(passedSlug);
-      console.log("---");
       return workItem.slug === passedSlug;
     }
   );
 
-  // const filteredData = workData.map((workItem: WorkItemProps, i: number) => {
-  //   const { slug } = workItem;
-  //   console.log(i);
-  //   console.log(slug);
-  //   console.log(passedSlug);
-  //   return slug.toLocaleLowerCase() === passedSlug.toLocaleLowerCase()
-  //     ? workItem
-  //     : null;
-  // });
-
-  const { fullStory, heroImage, skills, title } = filteredDataAlt[0];
+  const { fullStory, heroImage, introduction, skills, title } = filteredData[0];
 
   return (
     <>
@@ -39,6 +39,9 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
       </Heading>
       <SkillsList skills={skills} />
       <ProjectHeroImage alt={heroImage.alt} src={heroImage.src} />
+      {introduction && (
+        <p className="subheading1 bg-light-surface-primary">{introduction}</p>
+      )}
       <div className="full-story">{fullStory}</div>
     </>
   );

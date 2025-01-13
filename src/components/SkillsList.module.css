@@ -10,5 +10,5 @@
   color: white;
   display: block;
   white-space: nowrap;
-  @apply bg-light-surface-secondary text-light-bodytext-primary px-2 text-sm rounded-s-sm;
+  @apply bg-light-surface-secondary text-light-bodytext-primary px-2 text-sm rounded-sm border-light-border-secondary border-l-2;
 }

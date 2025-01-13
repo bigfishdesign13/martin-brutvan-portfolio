@@ -1,25 +1,24 @@
-// import Image from "next/image";
 import Heading from "../../components/Heading";
 import ProjectCard from "../../components/ProjectCard";
 import data, { WorkItemProps } from "../data/data";
 
 export default function Work() {
-  // console.log(workData);
   const workData = data.work;
   const workList = workData.map((workItem: WorkItemProps, i: number) => {
-    console.log(i);
-    const { image, skills, slug, summary, title } = workItem;
+    const { isActive, skills, slug, summary, thumbnail, title } = workItem;
     return (
-      <>
-        <ProjectCard
-          image={image}
-          key={`project_card_${i}`}
-          skills={skills}
-          slug={slug}
-          summary={summary}
-          title={title}
-        />
-      </>
+      isActive && (
+        <>
+          <ProjectCard
+            thumbnail={thumbnail}
+            key={`project_card_${i}`}
+            skills={skills}
+            slug={slug}
+            summary={summary}
+            title={title}
+          />
+        </>
+      )
     );
   });
 

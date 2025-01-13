@@ -11,10 +11,12 @@ export interface HeroImageProps {
 export interface WorkItemProps {
   fullStory: string | JSX.Element;
   heroImage: HeroImageProps;
-  image: string;
+  introduction?: string | JSX.Element;
+  isActive: boolean;
   skills: SkillTypes[];
   slug: string;
   summary: string;
+  thumbnail: string;
   title: string;
 }
 
@@ -24,18 +26,10 @@ export interface WorkDataProps {
 
 const data: WorkDataProps = {
   work: [
+    // Reservoir
     {
       fullStory: (
         <>
-          <p className="subheading1 bg-light-surface-primary">
-            The <strong>NYPL Reservoir Design System</strong> is the base for
-            the UI/UX design and front-end development of the NYPL web
-            applications. As the sole <strong>design technologist</strong> at
-            NYPL, I organize and contribute to all aspects of the design system,
-            including product planning, UX and visual design, development, and
-            writing detailed documentation.
-          </p>
-
           <Heading className="mt-8" fontFamily="alt" size="heading4">
             Links
           </Heading>
@@ -69,7 +63,7 @@ const data: WorkDataProps = {
           <Heading className="mt-8" fontFamily="alt" size="heading4">
             Background
           </Heading>
-          <p>
+          <p className="mt-4">
             While I am highly effective working closely with designers and
             engineers across the organization to create and enhance the design
             system, I find that what requires the most effort is getting all
@@ -314,7 +308,17 @@ const data: WorkDataProps = {
         alt: "NYPL Reservoir Design System",
         src: "/work/reservoir-hero.jpg",
       },
-      image: "/work/reservoir-thumbnail.svg",
+      introduction: (
+        <>
+          The <strong>NYPL Reservoir Design System</strong> is the base for the
+          UI/UX design and front-end development of the NYPL web applications.
+          As the sole <strong>design technologist</strong> at NYPL, I organize
+          and contribute to all aspects of the design system, including product
+          planning, UX and visual design, development, and writing detailed
+          documentation.
+        </>
+      ),
+      isActive: true,
       skills: [
         "Accessibility",
         "React",
@@ -327,22 +331,13 @@ const data: WorkDataProps = {
       slug: "nypl-reservoir-design-system",
       summary:
         "The base for the UI/UX design and front-end development of web applications for the New York Public Library.",
+      thumbnail: "/work/reservoir-thumbnail.svg",
       title: "NYPL Reservoir Design System",
     },
+    // WES
     {
       fullStory: (
         <>
-          <p className="subheading1 bg-light-surface-primary">
-            The Washington Episcopal School Strategic Plan website utilizes a{" "}
-            <strong>non-traditional design</strong> to align the site&apos;s
-            look and feel with the exciting nature of the message the site aims
-            to relay. Built using the <strong>WordPress CMS</strong>, the
-            intricate layout required meticulous implementation of enhanced page
-            builder tools. To further the sites unique nature, custom{" "}
-            <strong>parallax</strong> coding was used to create movement and
-            playfulness throughout the site.
-          </p>
-
           <Heading className="mt-8" fontFamily="alt" size="heading4">
             Links
           </Heading>
@@ -357,7 +352,7 @@ const data: WorkDataProps = {
           <Heading className="mt-8" fontFamily="alt" size="heading4">
             Background
           </Heading>
-          <p>
+          <p className="mt-4">
             The designs for this site were provided by a third-party firm. It
             was my responsibility to create the site using WordPress to
             execution the visual designs and site content. I worked closely with
@@ -401,7 +396,19 @@ const data: WorkDataProps = {
         alt: "The Washington Episcopal School Strategic Plan website",
         src: "/work/wes-hero.jpg",
       },
-      image: "/work/wes-thumbnail.svg",
+      introduction: (
+        <>
+          The Washington Episcopal School Strategic Plan website utilizes a{" "}
+          <strong>non-traditional design</strong> to align the site&apos;s look
+          and feel with the exciting nature of the message the site aims to
+          relay. Built using the <strong>WordPress CMS</strong>, the intricate
+          layout required meticulous implementation of enhanced page builder
+          tools. To further the sites unique nature, custom{" "}
+          <strong>parallax</strong> coding was used to create movement and
+          playfulness throughout the site.
+        </>
+      ),
+      isActive: true,
       skills: [
         "HTML",
         "CSS/SCSS",
@@ -413,20 +420,13 @@ const data: WorkDataProps = {
       slug: "wes-strategic-plan",
       summary:
         "A non-traditional site design that required meticulous implementation of enhanced page builder tools.",
+      thumbnail: "/work/wes-thumbnail.svg",
       title: "WES Strategic Plan",
     },
+    // BAACF
     {
       fullStory: (
         <>
-          <p className="subheading1 bg-light-surface-primary">
-            The Binghamton Arts &amp; Athletics Community Fund (BAACF) needed to
-            move fast to establish brand identity and get an online presence in
-            the form of a website and social media up and running. I worked
-            closely with the BAACF Board members to iterate over logo and
-            branding concepts, finalizing the logo and overall brand and
-            publishing a WordPress driven website within eights weeks.
-          </p>
-
           <Heading className="mt-8" fontFamily="alt" size="heading4">
             Links
           </Heading>
@@ -539,7 +539,17 @@ const data: WorkDataProps = {
         alt: "The Binghamton Arts & Athletics Community Fund website",
         src: "/work/baacf-hero.jpg",
       },
-      image: "/work/baacf-thumbnail.png",
+      introduction: (
+        <>
+          The Binghamton Arts &amp; Athletics Community Fund (BAACF) needed to
+          move fast to establish brand identity and get an online presence in
+          the form of a website and social media up and running. I worked
+          closely with the BAACF Board members to iterate over logo and branding
+          concepts, finalizing the logo and overall brand and publishing a
+          WordPress driven website within eights weeks.
+        </>
+      ),
+      isActive: true,
       skills: [
         "HTML",
         "CSS/SCSS",
@@ -551,25 +561,53 @@ const data: WorkDataProps = {
       slug: "baacf",
       summary:
         "A fast moving project that required a large set of deliverables.",
+      thumbnail: "/work/baacf-thumbnail.png",
       title: "Binghamton Arts & Athletics Community Fund",
     },
+    // Dreitonal
     {
       fullStory: (
         <>
-          <p>Content...</p>
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Links
+          </Heading>
+          <ul className="mt-4">
+            <li>
+              <Link href="https://dreitonal.at" target="_blank">
+                Dreitonal website
+              </Link>
+            </li>
+          </ul>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Something
+          </Heading>
         </>
       ),
       heroImage: {
-        alt: "NYPL Reservoir Design System",
-        src: "/work/reservoir-hero.jpg",
+        alt: "Dreitonal, making sound music",
+        src: "/work/dreitonal-hero.jpg",
       },
-      image: "/work/baacf.png",
+      introduction: (
+        <>
+          The Dreitonal project required a{" "}
+          <strong>WordPress multilingual</strong> website. To simplify site
+          maintenance, the menu system was enhanced to{" "}
+          <strong>dynamically</strong> create links to the corresponding
+          multilingual pages, allowing site content creators to focus on the
+          content without having to spend extra time maintaining the site
+          navigation.
+        </>
+      ),
+      isActive: true,
       skills: ["CSS/SCSS", "HTML", "JavaScript", "WordPress"],
       slug: "dreitonal",
       summary:
         "The Dreitonal project required a WordPress multilingual website. To simplify site maintenance, the menu system was enhanced to dynamically create links to the corresponding multilingual pages, allowing site content creators to focus on the content without having to spend extra time maintaining the site navigation.",
+      thumbnail: "/work/dreitonal-thumbnail.jpg",
       title: "Dreitonal",
     },
+    // ADN
     {
       fullStory: (
         <>
@@ -577,16 +615,19 @@ const data: WorkDataProps = {
         </>
       ),
       heroImage: {
-        alt: "NYPL Reservoir Design System",
-        src: "/work/reservoir-hero.jpg",
+        alt: "Abortion Defense Network",
+        src: "/work/adn-hero.jpg",
       },
-      image: "/work/baacf.png",
+      introduction: <></>,
+      isActive: false,
       skills: ["CSS/SCSS", "Formstack", "HTML", "JavaScript", "WordPress"],
       slug: "abortion-defense-network",
       summary:
         "The Abortion Defense Network site is built atop the WordPress CMS and incorporates tight intergration with Formstack, a third party form builder and data management system.",
+      thumbnail: "/work/blank-thumbnail.png",
       title: "Abortion Defense Network",
     },
+    // Newark Safety
     {
       fullStory: (
         <>
@@ -594,27 +635,48 @@ const data: WorkDataProps = {
         </>
       ),
       heroImage: {
-        alt: "NYPL Reservoir Design System",
-        src: "/work/reservoir-hero.jpg",
+        alt: "Newark Safety",
+        src: "/work/blank-hero.png",
       },
-      image: "/work/baacf.png",
+      introduction: <></>,
+      isActive: false,
       skills: ["CSS/SCSS", "HTML", "JavaScript", "WordPress"],
       slug: "newark-safety",
       summary:
         "The Newark Safety site is built using the WordPress CMS and incorporates tight intergration with Bonterra, a third party software package focused on data collection and social media engagement for nonprofit organizations.",
+      thumbnail: "/work/blank-thumbnail.png",
       title: "Newark Safety",
     },
+    // AGW
     {
       fullStory: (
         <>
-          <p>Content...</p>
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Background
+          </Heading>
+          <p className="mt-4">
+            The designs for this site were provided by a third-party firm. It
+            was my responsibility to create the site using WordPress to
+            execution the visual designs and site content. I worked closely with
+            the design firm to make design recommendations for improved
+            aesthetics and accessibility.
+          </p>
         </>
       ),
       heroImage: {
-        alt: "NYPL Reservoir Design System",
-        src: "/work/reservoir-hero.jpg",
+        alt: "AGW Events",
+        src: "/work/agw-hero.png",
       },
-      image: "/work/baacf.png",
+      introduction: (
+        <>
+          The AGW Events platform was a <strong>scalable</strong> event
+          registration portal. Each event had a dedicated custom website with
+          restricted access. Site administrators utilized{" "}
+          <strong>backend utilities</strong> for site maintenance and to
+          generate reports about each event&apos;s registrants.
+        </>
+      ),
+      isActive: true,
       skills: [
         "CSS/SCSS",
         "Database design",
@@ -622,10 +684,12 @@ const data: WorkDataProps = {
         "JavaScript",
         "PHP",
         "Responsive",
+        "Visual design",
       ],
       slug: "agw-events",
       summary:
-        "The AGW platform is a scalable event registration portal. Each event has a dedicated custom website with restricted access. Site administrators can utilize backend utilities to generate reports about each event's registrants.",
+        "A scalable event registration portal with backend utilities to site administration and reporting.",
+      thumbnail: "/work/agw-thumbnail.png",
       title: "AGW Events",
     },
     {
@@ -635,14 +699,16 @@ const data: WorkDataProps = {
         </>
       ),
       heroImage: {
-        alt: "NYPL Reservoir Design System",
-        src: "/work/reservoir-hero.jpg",
+        alt: "The COunt, A Musical",
+        src: "/work/blank-hero.png",
       },
-      image: "/work/baacf.png",
+      introduction: <></>,
+      isActive: true,
       skills: ["Logo design", "Photography", "Print design", "Social media"],
       slug: "the-count-a-musical",
       summary:
         "Logo design, print materials and event photography for The Count, A Musical.",
+      thumbnail: "/work/blank-thumbnail.png",
       title: "The Count, A Musical",
     },
     {
@@ -652,10 +718,36 @@ const data: WorkDataProps = {
         </>
       ),
       heroImage: {
-        alt: "NYPL Reservoir Design System",
-        src: "/work/reservoir-hero.jpg",
+        alt: "AIRC",
+        src: "/work/blank-hero.png",
       },
-      image: "/work/baacf.png",
+      introduction: <></>,
+      isActive: false,
+      skills: [
+        "CSS/SCSS",
+        "Visual design",
+        "HTML",
+        "JavaScript",
+        "jQuery",
+        "SCORM",
+      ],
+      slug: "airc",
+      summary: "TBD",
+      thumbnail: "/work/blank-thumbnail.png",
+      title: "AIRC",
+    },
+    {
+      fullStory: (
+        <>
+          <p>Content...</p>
+        </>
+      ),
+      heroImage: {
+        alt: "SmartPros eLearning Player",
+        src: "/work/blank-hero.png",
+      },
+      introduction: <></>,
+      isActive: false,
       skills: [
         "CSS/SCSS",
         "Visual design",
@@ -668,6 +760,7 @@ const data: WorkDataProps = {
       slug: "elearning-player",
       summary:
         "The eLearning Player is a single page application developed as the primary courseware to delive the core education products for SmartPros, A Kaplan Company. The original application was developed using Adobe Flash and eventually converted to a full native HTML application. The application offers varying course styles with multiple learning components and supports thousands of course titles.",
+      thumbnail: "/work/blank-thumbnail.png",
       title: "eLearning Player",
     },
   ],
