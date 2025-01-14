@@ -32,26 +32,26 @@ p:not(:first-of-type) {
     @apply text-light-bodytext-primary;
   }
   .btn-main-nav {
-    @apply py-1 px-4 text-mainNavLink text-light-link-primary hover:text-light-link-secondary;
+    @apply py-1 px-4 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary;
   }
   .display1 {
-    @apply text-display1;
+    @apply text-display1SmallMobile sm:text-display1Mobile md:text-display1;
   }
   .heading1 {
     line-height: 1.3;
-    @apply text-heading1;
+    @apply text-heading1Mobile md:text-heading1;
   }
   .heading2 {
     line-height: 1.3;
-    @apply text-heading2;
+    @apply text-heading2Mobile md:text-heading2;
   }
   .heading3 {
     line-height: 1.3;
-    @apply text-heading3;
+    @apply text-heading3Mobile md:text-heading3;
   }
   .heading4 {
     line-height: 1.3;
-    @apply text-heading4;
+    @apply text-heading4Mobile md:text-heading4;
   }
   .heading5 {
     line-height: 1.3;

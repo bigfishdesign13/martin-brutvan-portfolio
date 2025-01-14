@@ -20,7 +20,7 @@ export default function About() {
         gap between the two disciplines to bring people together and solve
         problems as a team.
       </p>
-      <div className="grid grid-cols-about w-full gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-about w-full gap-8">
         <Image
           // className="dark:invert"
           alt="Martin Brutvan"
