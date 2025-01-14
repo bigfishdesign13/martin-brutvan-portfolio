@@ -579,9 +579,13 @@ const data: WorkDataProps = {
             </li>
           </ul>
 
-          <Heading className="mt-8" fontFamily="alt" size="heading4">
-            Something
-          </Heading>
+          <Image
+            alt="Dreitonal, desktop and mobile examples"
+            className="mt-8"
+            height={480}
+            src="/work/dreitonal-example.png"
+            width={1024}
+          />
         </>
       ),
       heroImage: {
@@ -651,16 +655,43 @@ const data: WorkDataProps = {
     {
       fullStory: (
         <>
+          <Image
+            alt="AGW Events, desktop and mobile examples"
+            className="mt-8"
+            height={480}
+            src="/work/agw-example.png"
+            width={1024}
+          />
           <Heading className="mt-8" fontFamily="alt" size="heading4">
             Background
           </Heading>
           <p className="mt-4">
-            The designs for this site were provided by a third-party firm. It
-            was my responsibility to create the site using WordPress to
-            execution the visual designs and site content. I worked closely with
-            the design firm to make design recommendations for improved
-            aesthetics and accessibility.
+            This scalable event platform was powered by PHP and mySQL. It was
+            fast to access and generated reports in real time. Admins could work
+            within the online backend to process reports and adjust data or they
+            could download CSV files to work with spreadsheets locally.
           </p>
+
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Email marketing
+          </Heading>
+
+          <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2">
+            <p>
+              An event lifecycle included email marketing aimed at notifying
+              perspective event atterndees. I designed, produced, and scheduled
+              marketing emails that kept the event schedules on time and
+              attendees up to date about deadlines and important information.
+            </p>
+            <Image
+              alt="AGW Events, desktop and mobile examples"
+              // className="mt-8"
+              className="border border-light-border-tertiary drop-shadow-lg"
+              height={480}
+              src="/work/agw-email-blast.jpg"
+              width={1024}
+            />
+          </div>
         </>
       ),
       heroImage: {
@@ -670,10 +701,11 @@ const data: WorkDataProps = {
       introduction: (
         <>
           The AGW Events platform was a <strong>scalable</strong> event
-          registration portal. Each event had a dedicated custom website with
-          restricted access. Site administrators utilized{" "}
-          <strong>backend utilities</strong> for site maintenance and to
-          generate reports about each event&apos;s registrants.
+          registration portal. As events were added to the system, custom
+          websites with restricted access could be published almost immedately.
+          Site administrators utilized <strong>backend utilities</strong> for
+          site maintenance and to generate reports about each event&apos;s
+          registrants.
         </>
       ),
       isActive: true,
@@ -692,29 +724,59 @@ const data: WorkDataProps = {
       thumbnail: "/work/agw-thumbnail.png",
       title: "AGW Events",
     },
+    // The Count
     {
       fullStory: (
         <>
-          <p>Content...</p>
+          <Image
+            alt="The Count, A Musical logo"
+            className="mt-8 m-auto"
+            height={480}
+            src="/work/the-count-logo.svg"
+            width={480}
+          />
+          <Image
+            alt="The Count, A Musical print materials"
+            className="mt-8"
+            height={480}
+            src="/work/the-count-example-1.png"
+            width={1024}
+          />
+          <Image
+            alt="The Count, A Musical print materials"
+            className="mt-8"
+            height={480}
+            src="/work/the-count-example-2.png"
+            width={1024}
+          />
         </>
       ),
       heroImage: {
-        alt: "The COunt, A Musical",
-        src: "/work/blank-hero.png",
+        alt: "The Count, A Musical",
+        src: "/work/the-count-hero.jpg",
       },
-      introduction: <></>,
+      introduction: (
+        <>
+          The Count, A Musical, started small&mdash;almost as a dare&mdash;but
+          over time, it grew to a full fledged off-broadway{" "}
+          <strong>musical production</strong>. I came on board as the director
+          was preparing for the first full-scale performance to provide some
+          <strong>consistancy</strong> and pizzazs to The Count&apos;s brand,
+          assisting with print representation and marketing materials.
+        </>
+      ),
       isActive: true,
       skills: ["Logo design", "Photography", "Print design", "Social media"],
       slug: "the-count-a-musical",
       summary:
-        "Logo design, print materials and event photography for The Count, A Musical.",
-      thumbnail: "/work/blank-thumbnail.png",
+        "There's nothing like helping a friend take a personal project from a college muse to an off-broadway production.",
+      thumbnail: "/work/the-count-thumbnail.png",
       title: "The Count, A Musical",
     },
     {
       fullStory: (
         <>
-          <p>Content...</p>
+          <p></p>
         </>
       ),
       heroImage: {
