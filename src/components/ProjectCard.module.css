@@ -6,7 +6,7 @@
   /* display: grid; */
   gap: 2rem;
   grid-template-columns: 1fr 3fr;
-  @apply flex flex-col md:grid gap-2 md:gap-8;
+  @apply flex flex-col gap-2 md:gap-2;
   transition: transform 250ms;
   &:hover {
     /* transform: scale(1.015); */
@@ -48,5 +48,6 @@
   objectFit: contain;
   /* height: 200px; */
   /* @apply w-full border-2 rounded-2xl border-light-border-secondary; */
-  @apply w-full border border-light-border-secondary object-contain h-72 md:h-auto bg-light-surface-secondary rounded-md;
+  /* @apply w-full border border-light-border-secondary object-contain h-72 md:h-auto bg-light-surface-secondary rounded-md; */
+  @apply w-full border border-light-border-secondary object-contain h-72 bg-white rounded-md;
 }

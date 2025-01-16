@@ -38,7 +38,7 @@ export default function Work() {
         venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id
         elit.
       </p>
-      <div className="grid grid-cols-projects w-full gap-16 md:gap-8">{workList}</div>
+      <div className="grid grid-cols md:grid-cols-2 w-full gap-16 md:gap-8">{workList}</div>
     </>
   );
 }

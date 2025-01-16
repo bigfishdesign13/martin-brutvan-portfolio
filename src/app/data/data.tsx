@@ -607,7 +607,7 @@ const data: WorkDataProps = {
       skills: ["CSS/SCSS", "HTML", "JavaScript", "WordPress"],
       slug: "dreitonal",
       summary:
-        "The Dreitonal project required a WordPress multilingual website. To simplify site maintenance, the menu system was enhanced to dynamically create links to the corresponding multilingual pages, allowing site content creators to focus on the content without having to spend extra time maintaining the site navigation.",
+        "A multilingual WordPress website with JavaScript enhanced navigation.",
       thumbnail: "/work/dreitonal-thumbnail.jpg",
       title: "Dreitonal",
     },
