@@ -33,12 +33,18 @@ export default function Work() {
         My work
       </Heading>
       <p className="subheading1 mb-6">
-        Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra
-        augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-        venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id
-        elit.
+        With my skills spanning <strong>multiple disciplines</strong>, I have
+        worked on projects where I am the sole contributor as well as projects
+        where I fill specific design or engineering roles, depending on what is
+        needed. In either scenario, I am able to{" "}
+        <strong>communicate effectively</strong> regardless of the
+        audience&mdash;I streamline and distill complex information for{" "}
+        <strong>stakeholders</strong>, or use language that is explicit to{" "}
+        <strong>engineers</strong> or <strong>designers</strong>.
       </p>
-      <div className="grid grid-cols md:grid-cols-2 w-full gap-16 md:gap-8">{workList}</div>
+      <div className="grid grid-cols md:grid-cols-2 w-full gap-16 md:gap-8">
+        {workList}
+      </div>
     </>
   );
 }

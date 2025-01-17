@@ -32,23 +32,21 @@ export default function About() {
         />
         <div>
           <p className="mb-6">
-            Most recently, my focus has been on <strong>design systems</strong>{" "}
-            and the tremendous benefits they provide, including UX and
-            functional consistency, effective accessibility standards, and
-            ease-of-use. Previously, my main role encompassed{" "}
-            <strong>UI/UX design</strong> and{" "}
-            <strong>front-end development</strong> for private in-house systems
-            while also integrating with other web development teams to ensure
-            design fidelity was met before deployment, guiding front-end
-            developers and providing solutions for challenges met when
-            translating from design to code.
+            Most recently, my focus has been on design systems and the
+            tremendous benefits they provide, including UX and functional
+            consistency, effective accessibility standards, and ease-of-use.
+            Previously, my main role encompassed UI/UX design and front-end
+            development for private in-house systems while also integrating with
+            other web development teams to ensure design fidelity was met before
+            deployment, guiding front-end developers and providing solutions for
+            challenges met when translating from design to code.
           </p>
           <p className="mb-6">
-            Independently, I have most recently been focusing on{" "}
-            <strong>WordPress</strong> projects, handling all aspects of the web
-            development cycle from start to finish &mdash; including designing
-            wireframes and mockups, coding custom themes and page templates,
-            configuring hosting and deploying the final product.
+            Independently, I am often working on WordPress projects, handling
+            all aspects of the web development cycle from start to
+            finish&mdash;including designing wireframes and mockups, coding
+            custom themes and page templates, configuring hosting and deploying
+            the final product.
           </p>
         </div>
       </div>
