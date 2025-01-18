@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Heading from "../../components/Heading";
 import ProjectCard from "../../components/ProjectCard";
 import data, { WorkItemProps } from "../data/data";
+
+export const metadata: Metadata = {
+  title: "My work | Martin Brutvan",
+  description:
+    "Work examples produced by Martin Brutvan, including React/Typescript development, visual and UX design, and so much more.",
+};
 
 export default function Work() {
   const workData = data.work;

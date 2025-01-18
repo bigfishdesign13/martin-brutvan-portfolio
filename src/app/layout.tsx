@@ -19,6 +19,10 @@ const passionOne = Passion_One({
 export const metadata: Metadata = {
   title: "Martin Brutvan | Design Technologist",
   description: "Developer, designer, communicator",
+  openGraph: {
+    title: "Martin Brutvan | Design Technologist",
+    images: ["/martin-brutvan-og-image.png"],
+  },
 };
 
 export default function RootLayout({

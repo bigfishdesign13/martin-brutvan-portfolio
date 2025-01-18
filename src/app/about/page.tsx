@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Heading from "../../components/Heading";
+
+export const metadata: Metadata = {
+  title: "About me | Martin Brutvan",
+  description:
+    "I am a seasoned design technologist with over 25 years experience in visual and UX design, and web development.",
+};
 
 export default function About() {
   return (
