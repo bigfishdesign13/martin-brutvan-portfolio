@@ -22,6 +22,13 @@ body {
   font-family: var(--font-robotoSlab), serif;
   font-size: 1.125rem;
   line-height: 1.75;
+
+  /* Background image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right;
+  background-size: auto 80%;
+  @apply md:bg-[url("/background.png")];
 }
 p:not(:first-of-type) {
   margin-top: 1rem;
