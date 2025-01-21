@@ -1,5 +1,4 @@
 import Heading from "../components/Heading";
-// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
           <Heading
             level="h1"
             size="display1"
-            // className="font-heading base:text-base sm:text-sm md:text-md lg:text-lg xl:text-xl text-light-heading-primary"
             className="text-light-heading-primary leading-[.72] text-center md:text-left"
           >
             Martin Brutvan
