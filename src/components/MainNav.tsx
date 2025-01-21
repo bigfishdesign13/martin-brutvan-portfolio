@@ -1,19 +1,20 @@
 import React from "react";
 import Link from "next/link";
+import styles from "./MainNav.module.css";
 
 const MainNav = () => {
   return (
     <nav className="w-fit flex gap-4">
-      <Link className="btn-main-nav" href="/about">
+      <Link className={styles.navLink} href="/about">
         about
       </Link>
-      <div className="border-s-4 border-light-border-primary" />
-      <Link className="btn-main-nav" href="/work">
+      <div className={styles.navDivider} />
+      <Link className={styles.navLink} href="/work">
         work
       </Link>
-      <div className="border-s-4 border-light-border-primary" />
+      <div className={styles.navDivider} />
       <Link
-        className="btn-main-nav"
+        className={styles.navLink}
         href="/download/Martin-Brutvan-Resume.pdf"
         target="_blank"
       >
