@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col h-[70vh]">
+      <div className="flex flex-col h-[70vh] justify-center">
         <div className="flex items-center md:items-start flex-col md:ps-16 py-[4rem] md:border-s-[12px] md:border-light-border-primary md:w-min">
           <Heading
             level="h1"
