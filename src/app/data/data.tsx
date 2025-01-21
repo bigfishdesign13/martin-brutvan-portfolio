@@ -720,7 +720,7 @@ const data: WorkDataProps = {
       ],
       slug: "agw-events",
       summary:
-        "A scalable event registration portal with backend utilities to site administration and reporting.",
+        "A scalable event registration portal with backend utilities for site administration and reporting.",
       thumbnail: "/work/agw-thumbnail.png",
       title: "AGW Events",
     },
