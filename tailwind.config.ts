@@ -99,28 +99,29 @@ const config: Config = {
       colors: {
         // Semantic Tokens
         light: {
-          surface: {
-            primary: primatives.cornflower[25],
-            secondary: primatives.cornflower[50],
-            tertiary: primatives.cornflower[100],
-            menu: primatives.mahogany[25],
-          },
-          heading: {
-            primary: primatives.mahogany[900],
-            secondary: primatives.cornflower[900],
-            tertiary: primatives.cornflower[500],
-          },
           bodytext: {
             primary: primatives.gray[900],
+            seconday: primatives.gray[800],
           },
           border: {
             primary: primatives.mahogany[200],
             secondary: primatives.cornflower[200],
             tertiary: primatives.cornflower[50],
           },
+          heading: {
+            primary: primatives.mahogany[900],
+            secondary: primatives.cornflower[900],
+            tertiary: primatives.cornflower[500],
+          },
           link: {
-            primary: primatives.cornflower[500],
-            secondary: primatives.cornflower[700],
+            primary: primatives.mahogany[700],
+            secondary: primatives.mahogany[900],
+          },
+          surface: {
+            primary: primatives.cornflower[25],
+            secondary: primatives.cornflower[50],
+            tertiary: primatives.cornflower[100],
+            menu: primatives.mahogany[25],
           },
         },
         background: "var(--background)",

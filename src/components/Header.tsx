@@ -23,7 +23,8 @@ const Header = () => {
           <Image
             // className="dark:invert"
             alt="MB"
-            className="hidden md:block"
+            // className="hidden md:block"
+            className="h-12 md:h-16 mb-2 md:mb-0"
             height={64}
             priority
             src="/icon-desktop.svg"
@@ -32,7 +33,7 @@ const Header = () => {
           <Image
             // className="dark:invert"
             alt="Martin Brutvan, design technologist"
-            className="block md:hidden"
+            className="hidden"
             height={480}
             priority
             src="/icon-mobile.svg"

@@ -39,7 +39,7 @@ export default function Work() {
       >
         My work
       </Heading>
-      <p className="subheading1 mb-6">
+      <p className="subheading1 mb-8">
         With my skills spanning <strong>multiple disciplines</strong>, I have
         worked on projects where I am the sole contributor as well as projects
         where I fill specific design or engineering roles, depending on what is

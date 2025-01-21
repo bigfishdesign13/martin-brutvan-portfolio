@@ -27,11 +27,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom right;
-  background-size: auto 80%;
-  @apply md:bg-[url("/background.png")];
+  @apply bg-[url("/background.png")] bg-[length:80%_auto] md:bg-[length:auto_80%];
 }
 p:not(:first-of-type) {
   margin-top: 1rem;
+}
+
+a {
+  transition: color 200ms;
 }
 
 @layer components {
@@ -39,7 +42,8 @@ p:not(:first-of-type) {
     @apply text-light-bodytext-primary;
   }
   .btn-main-nav {
-    @apply py-1 px-4 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary;
+    display: inline-block;
+    @apply py-1 px-4 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary leading-8;
   }
   .display1 {
     @apply text-display1SmallMobile sm:text-display1Mobile md:text-display1;
