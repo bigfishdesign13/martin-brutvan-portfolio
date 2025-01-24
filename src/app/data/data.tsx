@@ -148,8 +148,22 @@ const data: WorkDataProps = {
             forward.
           </p>
           <p>
-            <Link href="/download/Example-Governance-Doc.pdf" target="_blank">
-              GOVERNANCE DOC EXAMPLE
+            <Link
+              href="/download/Example-Governance-Doc.pdf"
+              target="_blank"
+              className="inline-flex items-center font-bold"
+            >
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="List icon"
+                  aria-hidden="true"
+                  src="/images/icon-list.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Governance doc example
             </Link>
           </p>
           <p>
@@ -162,8 +176,22 @@ const data: WorkDataProps = {
             development.
           </p>
           <p>
-            <Link href="/download/Example-Spec-Doc.pdf" target="_blank">
-              SPEC DOC EXAMPLE
+            <Link
+              href="/download/Example-Spec-Doc.pdf"
+              target="_blank"
+              className="inline-flex items-center font-bold"
+            >
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="Document icon"
+                  aria-hidden="true"
+                  src="/images/icon-doc.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Spec doc example
             </Link>
           </p>
           <p>
@@ -179,8 +207,19 @@ const data: WorkDataProps = {
             <Link
               href="https://www.figma.com/design/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?node-id=142-881&t=qtMa4HaPW8HU4dJd-11"
               target="_blank"
+              className="inline-flex items-center font-bold"
             >
-              FIGMA DISPLAY PAGE EXAMPLE
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="Design icon"
+                  aria-hidden="true"
+                  src="/images/icon-design.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Figma display page example
             </Link>
           </p>
           <p>
@@ -202,8 +241,19 @@ const data: WorkDataProps = {
             <Link
               href="https://nypl.github.io/nypl-design-system/reservoir/v3/?path=/docs/components-feedback-banner--docs"
               target="_blank"
+              className="inline-flex items-center font-bold"
             >
-              STORYBOOK EXAMPLE
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="Website icon"
+                  aria-hidden="true"
+                  src="/images/icon-monitor.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Storybook example
             </Link>
           </p>
 
