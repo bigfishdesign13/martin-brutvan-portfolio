@@ -67,7 +67,7 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
       <SkillsList skills={skills} />
       <ProjectHeroImage alt={heroImage.alt} src={heroImage.src} />
       {introduction && (
-        <p className="subheading1 bg-light-surface-primary">{introduction}</p>
+        <p className="subheading1">{introduction}</p>
       )}
       <div className="full-story">{fullStory}</div>
     </>
