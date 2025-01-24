@@ -18,7 +18,7 @@ export default function About() {
           className="w-full border-2 border-light-border-secondary rounded-full fill-light-heading-secondary"
           height={100}
           priority
-          src="/headshot.svg"
+          src="/images/headshot.svg"
           width={100}
         />
         <div>

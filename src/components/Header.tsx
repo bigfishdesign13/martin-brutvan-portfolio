@@ -21,22 +21,19 @@ const Header = () => {
       <div className="flex flex-col md:flex-row w-full max-w-screen-xl md:justify-between items-center">
         <Link className="flex items-center gap-2" href="/">
           <Image
-            // className="dark:invert"
             alt="MB"
-            // className="hidden md:block"
             className="h-12 md:h-16 mb-2 md:mb-0"
             height={64}
             priority
-            src="/icon-desktop.svg"
+            src="/images/icon-mb-desktop.svg"
             width={64}
           />
           <Image
-            // className="dark:invert"
             alt="Martin Brutvan, design technologist"
             className="hidden"
             height={480}
             priority
-            src="/icon-mobile.svg"
+            src="/images/icon-mobile.svg"
             width={480}
           />
         </Link>

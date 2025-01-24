@@ -148,8 +148,22 @@ const data: WorkDataProps = {
             forward.
           </p>
           <p>
-            <Link href="/download/Example-Governance-Doc.pdf" target="_blank">
-              GOVERNANCE DOC EXAMPLE
+            <Link
+              href="/download/Example-Governance-Doc.pdf"
+              target="_blank"
+              className="inline-flex items-center font-bold"
+            >
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="List icon"
+                  aria-hidden="true"
+                  src="/images/icon-list.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Governance doc example
             </Link>
           </p>
           <p>
@@ -162,8 +176,22 @@ const data: WorkDataProps = {
             development.
           </p>
           <p>
-            <Link href="/download/Example-Spec-Doc.pdf" target="_blank">
-              SPEC DOC EXAMPLE
+            <Link
+              href="/download/Example-Spec-Doc.pdf"
+              target="_blank"
+              className="inline-flex items-center font-bold"
+            >
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="Document icon"
+                  aria-hidden="true"
+                  src="/images/icon-doc.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Spec doc example
             </Link>
           </p>
           <p>
@@ -179,8 +207,19 @@ const data: WorkDataProps = {
             <Link
               href="https://www.figma.com/design/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?node-id=142-881&t=qtMa4HaPW8HU4dJd-11"
               target="_blank"
+              className="inline-flex items-center font-bold"
             >
-              FIGMA DISPLAY PAGE EXAMPLE
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="Design icon"
+                  aria-hidden="true"
+                  src="/images/icon-design.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Figma display page example
             </Link>
           </p>
           <p>
@@ -202,8 +241,19 @@ const data: WorkDataProps = {
             <Link
               href="https://nypl.github.io/nypl-design-system/reservoir/v3/?path=/docs/components-feedback-banner--docs"
               target="_blank"
+              className="inline-flex items-center font-bold"
             >
-              STORYBOOK EXAMPLE
+              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
+                <Image
+                  alt="Website icon"
+                  aria-hidden="true"
+                  src="/images/icon-monitor.svg"
+                  height={24}
+                  width={24}
+                  className="fill-light-heading-secondary"
+                />
+              </span>
+              Storybook example
             </Link>
           </p>
 
@@ -306,7 +356,7 @@ const data: WorkDataProps = {
       ),
       heroImage: {
         alt: "NYPL Reservoir Design System",
-        src: "/work/reservoir-hero.jpg",
+        src: "/images/work/reservoir-hero.jpg",
       },
       introduction: (
         <>
@@ -331,7 +381,7 @@ const data: WorkDataProps = {
       slug: "nypl-reservoir-design-system",
       summary:
         "The base for the UI/UX design and front-end development of web applications for the New York Public Library.",
-      thumbnail: "/work/reservoir-thumbnail.svg",
+      thumbnail: "/images/work/reservoir-thumbnail.svg",
       title: "NYPL Reservoir Design System",
     },
     // WES
@@ -394,7 +444,7 @@ const data: WorkDataProps = {
       ),
       heroImage: {
         alt: "The Washington Episcopal School Strategic Plan website",
-        src: "/work/wes-hero.jpg",
+        src: "/images/work/wes-hero.jpg",
       },
       introduction: (
         <>
@@ -420,7 +470,7 @@ const data: WorkDataProps = {
       slug: "wes-strategic-plan",
       summary:
         "A non-traditional site design that required meticulous implementation of enhanced page builder tools.",
-      thumbnail: "/work/wes-thumbnail.svg",
+      thumbnail: "/images/work/wes-thumbnail.svg",
       title: "WES Strategic Plan",
     },
     // BAACF
@@ -448,7 +498,7 @@ const data: WorkDataProps = {
             alt="BAACF brand"
             className="p-8 mb-8"
             height={1280}
-            src="/work/baacf-logo-specs.svg"
+            src="/images/work/baacf-logo-specs.svg"
             width={1280}
           />
           <div className="grid grid-cols-1 gap-8 mt-4 md:grid-cols-3">
@@ -456,42 +506,42 @@ const data: WorkDataProps = {
               alt="BAACF horizonal color logo"
               className="p-8"
               height={768}
-              src="/work/baacf-logo-horizontal-color.svg"
+              src="/images/work/baacf-logo-horizontal-color.svg"
               width={768}
             />
             <Image
               alt="BAACF horizonal black logo"
               className="p-8"
               height={768}
-              src="/work/baacf-logo-horizontal-black.svg"
+              src="/images/work/baacf-logo-horizontal-black.svg"
               width={768}
             />
             <Image
               alt="BAACF horizonal white logo"
               className="p-8 bg-black"
               height={768}
-              src="/work/baacf-logo-horizontal-white.svg"
+              src="/images/work/baacf-logo-horizontal-white.svg"
               width={768}
             />
             <Image
               alt="BAACF vertical color logo"
               className="p-8"
               height={768}
-              src="/work/baacf-logo-vertical-color.svg"
+              src="/images/work/baacf-logo-vertical-color.svg"
               width={768}
             />
             <Image
               alt="BAACF vertical color logo"
               className="p-8"
               height={768}
-              src="/work/baacf-logo-vertical-black.svg"
+              src="/images/work/baacf-logo-vertical-black.svg"
               width={768}
             />
             <Image
               alt="BAACF vertical color logo"
               className="p-8 bg-black"
               height={768}
-              src="/work/baacf-logo-vertical-white.svg"
+              src="/images/work/baacf-logo-vertical-white.svg"
               width={768}
             />
           </div>
@@ -504,21 +554,21 @@ const data: WorkDataProps = {
               alt="BAACF vertical color logo"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={768}
-              src="/work/baacf-email-template.png"
+              src="/images/work/baacf-email-template.png"
               width={768}
             />
             <Image
               alt="BAACF vertical color logo"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={768}
-              src="/work/baacf-leaders-day-flier-1.jpg"
+              src="/images/work/baacf-leaders-day-flier-1.jpg"
               width={768}
             />
             <Image
               alt="BAACF vertical color logo"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={768}
-              src="/work/baacf-leaders-day-flier-2.jpg"
+              src="/images/work/baacf-leaders-day-flier-2.jpg"
               width={768}
             />
           </div>
@@ -530,14 +580,14 @@ const data: WorkDataProps = {
             alt="BAACF social sharing image"
             className="border border-light-border-tertiary drop-shadow-lg mt-8"
             height={768}
-            src="/work/baacf-social-share-image.jpg"
+            src="/images/work/baacf-social-share-image.jpg"
             width={768}
           />
         </>
       ),
       heroImage: {
         alt: "The Binghamton Arts & Athletics Community Fund website",
-        src: "/work/baacf-hero.jpg",
+        src: "/images/work/baacf-hero.jpg",
       },
       introduction: (
         <>
@@ -561,7 +611,7 @@ const data: WorkDataProps = {
       slug: "baacf",
       summary:
         "A fast moving project that required a large set of deliverables.",
-      thumbnail: "/work/baacf-thumbnail.png",
+      thumbnail: "/images/work/baacf-thumbnail.png",
       title: "Binghamton Arts & Athletics Community Fund",
     },
     // Dreitonal
@@ -583,14 +633,14 @@ const data: WorkDataProps = {
             alt="Dreitonal, desktop and mobile examples"
             className="mt-8"
             height={480}
-            src="/work/dreitonal-example.png"
+            src="/images/work/dreitonal-example.png"
             width={1024}
           />
         </>
       ),
       heroImage: {
         alt: "Dreitonal, making sound music",
-        src: "/work/dreitonal-hero.jpg",
+        src: "/images/work/dreitonal-hero.jpg",
       },
       introduction: (
         <>
@@ -608,7 +658,7 @@ const data: WorkDataProps = {
       slug: "dreitonal",
       summary:
         "A multilingual WordPress website with JavaScript enhanced navigation.",
-      thumbnail: "/work/dreitonal-thumbnail.jpg",
+      thumbnail: "/images/work/dreitonal-thumbnail.jpg",
       title: "Dreitonal",
     },
     // ADN
@@ -620,7 +670,7 @@ const data: WorkDataProps = {
       ),
       heroImage: {
         alt: "Abortion Defense Network",
-        src: "/work/adn-hero.jpg",
+        src: "/images/work/adn-hero.jpg",
       },
       introduction: <></>,
       isActive: false,
@@ -628,7 +678,7 @@ const data: WorkDataProps = {
       slug: "abortion-defense-network",
       summary:
         "The Abortion Defense Network site is built atop the WordPress CMS and incorporates tight intergration with Formstack, a third party form builder and data management system.",
-      thumbnail: "/work/blank-thumbnail.png",
+      thumbnail: "/images/work/blank-thumbnail.png",
       title: "Abortion Defense Network",
     },
     // Newark Safety
@@ -640,7 +690,7 @@ const data: WorkDataProps = {
       ),
       heroImage: {
         alt: "Newark Safety",
-        src: "/work/blank-hero.png",
+        src: "/images/work/blank-hero.png",
       },
       introduction: <></>,
       isActive: false,
@@ -648,7 +698,7 @@ const data: WorkDataProps = {
       slug: "newark-safety",
       summary:
         "The Newark Safety site is built using the WordPress CMS and incorporates tight intergration with Bonterra, a third party software package focused on data collection and social media engagement for nonprofit organizations.",
-      thumbnail: "/work/blank-thumbnail.png",
+      thumbnail: "/images/work/blank-thumbnail.png",
       title: "Newark Safety",
     },
     // AGW
@@ -659,7 +709,7 @@ const data: WorkDataProps = {
             alt="AGW Events, desktop and mobile examples"
             className="mt-8"
             height={480}
-            src="/work/agw-example.png"
+            src="/images/work/agw-example.png"
             width={1024}
           />
           <Heading className="mt-8" fontFamily="alt" size="heading4">
@@ -688,7 +738,7 @@ const data: WorkDataProps = {
               // className="mt-8"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={480}
-              src="/work/agw-email-blast.jpg"
+              src="/images/work/agw-email-blast.jpg"
               width={1024}
             />
           </div>
@@ -696,7 +746,7 @@ const data: WorkDataProps = {
       ),
       heroImage: {
         alt: "AGW Events",
-        src: "/work/agw-hero.png",
+        src: "/images/work/agw-hero.png",
       },
       introduction: (
         <>
@@ -721,7 +771,7 @@ const data: WorkDataProps = {
       slug: "agw-events",
       summary:
         "A scalable event registration portal with backend utilities for site administration and reporting.",
-      thumbnail: "/work/agw-thumbnail.png",
+      thumbnail: "/images/work/agw-thumbnail.png",
       title: "AGW Events",
     },
     // The Count
@@ -732,28 +782,28 @@ const data: WorkDataProps = {
             alt="The Count, A Musical logo"
             className="mt-8 m-auto"
             height={480}
-            src="/work/the-count-logo.svg"
+            src="/images/work/the-count-logo.svg"
             width={480}
           />
           <Image
             alt="The Count, A Musical print materials"
             className="mt-8"
             height={480}
-            src="/work/the-count-example-1.png"
+            src="/images/work/the-count-example-1.png"
             width={1024}
           />
           <Image
             alt="The Count, A Musical print materials"
             className="mt-8"
             height={480}
-            src="/work/the-count-example-2.png"
+            src="/images/work/the-count-example-2.png"
             width={1024}
           />
         </>
       ),
       heroImage: {
         alt: "The Count, A Musical",
-        src: "/work/the-count-hero.jpg",
+        src: "/images/work/the-count-hero.jpg",
       },
       introduction: (
         <>
@@ -770,7 +820,7 @@ const data: WorkDataProps = {
       slug: "the-count-a-musical",
       summary:
         "There's nothing like helping a friend take a personal project from a college muse to an off-broadway production.",
-      thumbnail: "/work/the-count-thumbnail.png",
+      thumbnail: "/images/work/the-count-thumbnail.png",
       title: "The Count, A Musical",
     },
     {
@@ -781,7 +831,7 @@ const data: WorkDataProps = {
       ),
       heroImage: {
         alt: "AIRC",
-        src: "/work/blank-hero.png",
+        src: "/images/work/blank-hero.png",
       },
       introduction: <></>,
       isActive: false,
@@ -795,7 +845,7 @@ const data: WorkDataProps = {
       ],
       slug: "airc",
       summary: "TBD",
-      thumbnail: "/work/blank-thumbnail.png",
+      thumbnail: "/images/work/blank-thumbnail.png",
       title: "AIRC",
     },
     {
@@ -806,7 +856,7 @@ const data: WorkDataProps = {
       ),
       heroImage: {
         alt: "SmartPros eLearning Player",
-        src: "/work/blank-hero.png",
+        src: "/images/work/blank-hero.png",
       },
       introduction: <></>,
       isActive: false,
@@ -822,7 +872,7 @@ const data: WorkDataProps = {
       slug: "elearning-player",
       summary:
         "The eLearning Player is a single page application developed as the primary courseware to delive the core education products for SmartPros, A Kaplan Company. The original application was developed using Adobe Flash and eventually converted to a full native HTML application. The application offers varying course styles with multiple learning components and supports thousands of course titles.",
-      thumbnail: "/work/blank-thumbnail.png",
+      thumbnail: "/images/work/blank-thumbnail.png",
       title: "eLearning Player",
     },
   ],
