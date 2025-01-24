@@ -1,4 +1,5 @@
 import Heading from "../components/Heading";
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
           <Heading
             level="h1"
             size="display1"
+            // className="font-heading base:text-base sm:text-sm md:text-md lg:text-lg xl:text-xl text-light-heading-primary"
             className="text-light-heading-primary leading-[.72] text-left w-min"
           >
             Martin Brutvan
@@ -23,9 +25,13 @@ export default function Home() {
             </Heading>
             <p className="flex flex-row items-center mt-2 md:mt-0 text-light-heading-secondary text-[14px] sm:text-[18px] md:text-[22px] font-bold">
               <span>designer</span>
-              <span className="mx-2 text-light-border-primary">&bull;</span>
+              <span className="mx-2 text-light-border-primary">
+                &bull;
+              </span>
               <span>engineer</span>
-              <span className="mx-2 text-light-border-primary">&bull;</span>
+              <span className="mx-2 text-light-border-primary">
+                &bull;
+              </span>
               <span>communicator</span>
             </p>
           </div>
