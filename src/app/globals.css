@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom right;
-  @apply bg-[url("/background.png")] bg-[length:80%_auto] md:bg-[length:auto_80%];
+  @apply bg-[url("/images/background.png")] bg-[length:80%_auto] md:bg-[length:auto_80%];
 }
 p:not(:first-of-type) {
   margin-top: 1rem;
