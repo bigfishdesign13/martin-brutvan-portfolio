@@ -49,5 +49,5 @@
   /* height: 200px; */
   /* @apply w-full border-2 rounded-2xl border-light-border-secondary; */
   /* @apply w-full border border-light-border-secondary object-contain h-72 md:h-auto bg-light-surface-secondary rounded-md; */
-  @apply w-full border border-light-border-secondary object-contain h-72 bg-white rounded-md;
+  @apply w-full border border-light-border-secondary object-contain bg-white rounded-md;
 }

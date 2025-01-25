@@ -470,7 +470,7 @@ const data: WorkDataProps = {
       slug: "wes-strategic-plan",
       summary:
         "A non-traditional site design that required meticulous implementation of enhanced page builder tools.",
-      thumbnail: "/images/work/wes-thumbnail.svg",
+      thumbnail: "/images/work/wes-thumbnail.png",
       title: "WES Strategic Plan",
     },
     // BAACF
@@ -551,21 +551,21 @@ const data: WorkDataProps = {
           </Heading>
           <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-3">
             <Image
-              alt="BAACF vertical color logo"
+              alt="BAACF email template"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={768}
               src="/images/work/baacf-email-template.png"
               width={768}
             />
             <Image
-              alt="BAACF vertical color logo"
+              alt="BAACF Leaders Day flier v1"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={768}
               src="/images/work/baacf-leaders-day-flier-1.jpg"
               width={768}
             />
             <Image
-              alt="BAACF vertical color logo"
+              alt="BAACF Leaders Day flier v2"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={768}
               src="/images/work/baacf-leaders-day-flier-2.jpg"
@@ -611,7 +611,7 @@ const data: WorkDataProps = {
       slug: "baacf",
       summary:
         "A fast moving project that required a large set of deliverables.",
-      thumbnail: "/images/work/baacf-thumbnail.png",
+      thumbnail: "/images/work/baacf-thumbnail.jpg",
       title: "Binghamton Arts & Athletics Community Fund",
     },
     // Dreitonal
@@ -734,7 +734,7 @@ const data: WorkDataProps = {
               attendees up to date about deadlines and important information.
             </p>
             <Image
-              alt="AGW Events, desktop and mobile examples"
+              alt="AGW Events email template"
               // className="mt-8"
               className="border border-light-border-tertiary drop-shadow-lg"
               height={480}
@@ -771,7 +771,7 @@ const data: WorkDataProps = {
       slug: "agw-events",
       summary:
         "A scalable event registration portal with backend utilities for site administration and reporting.",
-      thumbnail: "/images/work/agw-thumbnail.png",
+      thumbnail: "/images/work/agw-thumbnail.jpg",
       title: "AGW Events",
     },
     // The Count
@@ -786,14 +786,14 @@ const data: WorkDataProps = {
             width={480}
           />
           <Image
-            alt="The Count, A Musical print materials"
+            alt="The Count, A Musical print materials v1"
             className="mt-8"
             height={480}
             src="/images/work/the-count-example-1.png"
             width={1024}
           />
           <Image
-            alt="The Count, A Musical print materials"
+            alt="The Count, A Musical print materials v2"
             className="mt-8"
             height={480}
             src="/images/work/the-count-example-2.png"
@@ -820,7 +820,7 @@ const data: WorkDataProps = {
       slug: "the-count-a-musical",
       summary:
         "There's nothing like helping a friend take a personal project from a college muse to an off-broadway production.",
-      thumbnail: "/images/work/the-count-thumbnail.png",
+      thumbnail: "/images/work/the-count-thumbnail.jpg",
       title: "The Count, A Musical",
     },
     {
