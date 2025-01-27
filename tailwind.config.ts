@@ -68,20 +68,22 @@ const config: Config = {
         md: "2rem",
         lg: "3rem",
         xl: "4rem",
-        display1: "10rem",
+        display1: "10rem", // 160px
         display1Mobile: "8rem",
         display1SmallMobile: "6rem",
-        heading1: "8rem",
+        heading1: "8rem", // 128px
         heading1Mobile: "6rem",
-        heading2: "6rem",
+        heading2: "6rem", // 96px
         heading2Mobile: "4rem",
-        heading3: "4rem",
+        heading3: "4rem", // 64px
         heading3Mobile: "3.2rem",
-        heading4: "3rem",
+        heading4: "3rem", // 48px
         heading4Mobile: "2.4rem",
-        heading5: "2rem",
-        heading6: "1rem",
+        heading5: "2rem", // 32px
+        heading6: "1rem", // 16px
         subheading1: "1.5rem",
+        body1: "1.125rem",
+        body2: "1rem",
         mainNavLink: "1.75rem", // 28px,
         mainNavLinkSmallMobile: "1.25rem", // 20px,
         mainNavLinkLargeMobile: "1.5rem", // 24px,
