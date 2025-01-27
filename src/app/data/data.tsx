@@ -472,6 +472,73 @@ const data: WorkDataProps = {
       thumbnail: "/images/work/wes-thumbnail.png",
       title: "WES Strategic Plan",
     },
+    // Portfolio
+    {
+      fullStory: (
+        <>
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Links
+          </Heading>
+          <ul className="mt-4">
+            <li>
+              <Link
+                href="https://github.com/bigfishdesign13/martin-brutvan-portfolio"
+                target="_blank"
+              >
+                GitHub repo
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.figma.com/design/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?node-id=0-1&t=A5LVbkqGSxDqVMme-1"
+                target="_blank"
+              >
+                Figma designs
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.figma.com/proto/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?page-id=0%3A1&node-id=1-2&p=f&viewport=438%2C49%2C0.25&t=Yj7omQRz3wtQhFrf-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1"
+                target="_blank"
+              >
+                Prototype for desktop
+              </Link>
+            </li>
+          </ul>
+        </>
+      ),
+      heroImage: {
+        alt: "Martin Brutvan Portfolio",
+        src: "/images/work/portfolio-hero.jpg",
+      },
+      introduction: (
+        <>
+          Creating a new portfolio site gave me the opportunity to have some fun
+          as I designed and built out the site from{" "}
+          <strong>start to finish</strong>. It also allowed me to work with some
+          new tools and frameworks&mdash;specifically,{" "}
+          <strong>NextJS 15</strong> and <strong>Tailwind CSS</strong>. Assets
+          and design tokens were synced across the{" "}
+          <strong>Figma designs</strong> and the NextJS site and a basic{" "}
+          <strong>prototype</strong> was created for the desktop version of the
+          site designs.
+        </>
+      ),
+      isActive: true,
+      skills: [
+        "Visual design",
+        "NextJS",
+        "React",
+        "Responsive",
+        "Typescript",
+        "Tailwind CSS",
+        "Prototyping",
+      ],
+      slug: "martin-brutvan-portfolio",
+      summary: "A project that I took from design to deployment and allowed me to work with some new tools.",
+      thumbnail: "/images/work/portfolio-thumbnail.jpg",
+      title: "Martin Brutvan Portfolio",
+    },
     // BAACF
     {
       fullStory: (
@@ -822,6 +889,7 @@ const data: WorkDataProps = {
       thumbnail: "/images/work/the-count-thumbnail.jpg",
       title: "The Count, A Musical",
     },
+    // AIRC
     {
       fullStory: (
         <>
@@ -847,6 +915,7 @@ const data: WorkDataProps = {
       thumbnail: "/images/work/blank-thumbnail.png",
       title: "AIRC",
     },
+    // SmartPros eLP
     {
       fullStory: (
         <>
