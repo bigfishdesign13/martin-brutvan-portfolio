@@ -31,23 +31,7 @@
   transition: color 250ms;
   @apply mb-2 text-light-link-primary;
 }
-.skillsList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  @apply mb-4;
-}
-.skill {
-  color: white;
-  display: block;
-  white-space: nowrap;
-  @apply bg-light-surface-secondary text-light-bodytext-primary px-2 text-sm rounded-s-sm;
-}
 .cardImage {
   transition: box-shadow 250ms;
-  objectFit: contain;
-  /* height: 200px; */
-  /* @apply w-full border-2 rounded-2xl border-light-border-secondary; */
-  /* @apply w-full border border-light-border-secondary object-contain h-72 md:h-auto bg-light-surface-secondary rounded-md; */
   @apply w-full border border-light-border-secondary object-contain bg-white rounded-md;
 }

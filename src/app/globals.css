@@ -20,8 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-robotoSlab), serif;
-  font-size: 1.125rem;
   line-height: 1.75;
+  @apply text-light-bodytext-primary text-body1;
 
   /* Background image */
   background-repeat: no-repeat;
@@ -38,9 +38,6 @@ a {
 }
 
 @layer components {
-  body {
-    @apply text-light-bodytext-primary;
-  }
   .btn-main-nav {
     display: inline-block;
     @apply py-1 px-4 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary leading-8;

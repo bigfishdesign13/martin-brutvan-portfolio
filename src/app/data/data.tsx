@@ -216,7 +216,6 @@ const data: WorkDataProps = {
                   src="/images/icon-design.svg"
                   height={24}
                   width={24}
-                  className="fill-light-heading-secondary"
                 />
               </span>
               Figma display page example
