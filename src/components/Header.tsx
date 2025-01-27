@@ -19,7 +19,11 @@ const Header = () => {
       className={`fixed flex justify-center w-full p-4 transition-all duration-300 ${scrollClass}`}
     >
       <div className="flex flex-col md:flex-row w-full max-w-screen-xl md:justify-between items-center">
-        <Link className="flex items-center gap-2" href="/">
+        <Link
+          aria-label="Go to Martin Brutvan Portfolio home page"
+          className="flex items-center gap-2"
+          href="/"
+        >
           <Image
             alt="MB"
             className="h-12 md:h-16 mb-2 md:mb-0"
