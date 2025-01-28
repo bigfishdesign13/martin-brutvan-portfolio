@@ -1,7 +1,7 @@
 /* MainNav.module.css */
 
 .navLink {
-  @apply py-1 px-4 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary leading-8;
+  @apply py-1 px-8 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary leading-8 border-l-2 border-light-border-tertiary first:border-l-0;
 }
 .navDivider {
   @apply border-s-4 border-light-border-tertiary;
