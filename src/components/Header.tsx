@@ -21,12 +21,13 @@ const Header = () => {
       <div className="flex flex-col md:flex-row w-full max-w-screen-xl md:justify-between items-center">
         <div className="flex items-center justify-between w-full mb-2 md:mb-0">
           <Link
-            aria-label="Go to Martin Brutvan Portfolio home page"
+            aria-label="Go to the home page"
             className="flex items-center gap-2"
             href="/"
           >
             <Image
               alt="MB"
+              aria-hidden
               className="h-12 md:h-16 w-12 md:w-16"
               height={64}
               priority
@@ -35,6 +36,7 @@ const Header = () => {
             />
             <Image
               alt="Martin Brutvan, design technologist"
+              aria-hidden
               className="hidden"
               height={480}
               priority
