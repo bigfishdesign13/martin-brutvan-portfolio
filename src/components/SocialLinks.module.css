@@ -1,0 +1,11 @@
+/* MainNav.module.css */
+
+.container {
+  @apply w-fit flex items-center;
+}
+.link {
+  @apply flex justify-center w-11 md:w-8 h-11 md:h-8;
+}
+.icon {
+  @apply w-6 md:w-5;
+}
