@@ -7,12 +7,14 @@ const SocialLinks = () => {
   return (
     <div className={styles.container}>
       <Link
+        aria-label="Visit my LinkedIn profile"
         className={styles.link}
         href="https://www.linkedin.com/in/martybrutvan/"
         target="_blank"
       >
         <Image
-          alt="Visit my profile on LinkedIn"
+          alt="LinkedIn icon"
+          aria-hidden
           src="/images/icon-linkedin.svg"
           className={styles.icon}
           height={16}
