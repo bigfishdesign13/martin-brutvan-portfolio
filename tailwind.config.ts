@@ -76,12 +76,14 @@ const config: Config = {
         heading2: "6rem", // 96px
         heading2Mobile: "4rem",
         heading3: "4rem", // 64px
-        heading3Mobile: "3.2rem",
+        heading3Mobile: "3rem",
         heading4: "3rem", // 48px
         heading4Mobile: "2.4rem",
         heading5: "2rem", // 32px
+        heading5Mobile: "1.625rem",
         heading6: "1rem", // 16px
         subheading1: "1.5rem",
+        subheading2: "1.375rem",
         body1: "1.125rem",
         body2: "1rem",
         mainNavLink: "1.75rem", // 28px,

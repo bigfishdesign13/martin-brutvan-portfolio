@@ -535,7 +535,8 @@ const data: WorkDataProps = {
         "Prototyping",
       ],
       slug: "martin-brutvan-portfolio",
-      summary: "A project that I took from design to deployment and allowed me to work with some new tools.",
+      summary:
+        "A project that I took from design to deployment and allowed me to work with some new tools.",
       thumbnail: "/images/work/portfolio-thumbnail.jpg",
       title: "Martin Brutvan Portfolio",
     },
@@ -875,10 +876,9 @@ const data: WorkDataProps = {
         <>
           The Count, A Musical, started small&mdash;almost as a dare&mdash;but
           over time, it grew to a full fledged off-broadway{" "}
-          <strong>musical production</strong>. I came on board as the director
-          was preparing for the first full-scale performance to provide some
-          <strong>consistancy</strong> and pizzazs to The Count&apos;s brand,
-          assisting with print representation and marketing materials.
+          <strong>musical production</strong>. I came on board to add some{" "}
+          <strong>consistancy</strong> and pizzazz to The Count&apos;s brand as
+          the director was preparing for the first full-scale performance.
         </>
       ),
       isActive: true,
