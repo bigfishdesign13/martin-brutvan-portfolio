@@ -5,7 +5,7 @@ import Heading from "../../components/Heading";
 export const metadata: Metadata = {
   title: "About me | Martin Brutvan",
   description:
-    "I am a seasoned design technologist with over 25 years experience in visual and UX design, and web development.",
+    "I am a seasoned design technologist with extensive experience extensive UX design, and web development.",
 };
 
 export default function About() {
@@ -31,8 +31,8 @@ export default function About() {
             Hi, I&apos;m Martin
           </Heading>
           <p className="subheading1 mb-6">
-            I am a seasoned <strong>design technologist</strong> with over 25
-            years experience in <strong>visual and UX design</strong>,{" "}
+            I am a seasoned <strong>design technologist</strong> with extensive
+            experience in <strong>visual and UX design</strong>,{" "}
             <strong>web development</strong>, and <strong>accessibility</strong>
             . I work seamlessly with both designers and engineers, often
             bridging the gap between the two disciplines to bring people
@@ -43,11 +43,11 @@ export default function About() {
             tremendous benefits they provide, including UX and functional
             consistency, effective implementation of accessibility standards,
             and ease-of-use. Previously, my main role encompassed UI/UX design
-            and front-end development for private in-house systems while also
-            integrating with other web development teams to ensure design
-            fidelity was met before deployment, guiding front-end developers and
-            providing solutions for challenges met when translating from design
-            to code.
+            and front-end development for private in-house systems. I worked
+            across multiple teams to ensure design fidelity and expected
+            functionality for a release candidate were met before deployment. I
+            often assisted with development by providing solutions for
+            challenges met when translating from design to code.
           </p>
           <p className="mb-6">
             Independently, I am often working on WordPress projects, handling

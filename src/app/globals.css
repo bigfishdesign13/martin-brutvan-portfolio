@@ -63,13 +63,13 @@ a {
   }
   .heading5 {
     line-height: 1.3;
-    @apply text-heading5;
+    @apply text-heading5Mobile md:text-heading5;
   }
   .heading6 {
     @apply text-heading6;
   }
   .subheading1 {
-    @apply text-subheading1 text-light-heading-primary;
+    @apply text-subheading2 md:text-subheading1 text-light-heading-primary;
   }
   .full-story a {
     @apply text-light-link-primary hover:text-light-link-secondary transition-colors underline underline-offset-[3px] decoration-1 decoration-dotted;
