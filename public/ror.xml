@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://martin-brutvan-portfolio.vercel.app/</title>
+  <link>https://martin-brutvan-portfolio.vercel.app/</link>
+
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/</link>
+     <title>Martin Brutvan | Design Technologist</title>
+     <description>Developer, designer, communicator</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/about</link>
+     <title>About me | Martin Brutvan</title>
+     <description>I am a seasoned design technologist with extensive experience extensive UX design, and web development.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work</link>
+     <title>My work | Martin Brutvan</title>
+     <description>Work examples produced by Martin Brutvan, including React/Typescript development, visual and UX design, and so much more.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/download/Martin-Brutvan-Resume.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work/nypl-reservoir-design-system</link>
+     <title>NYPL Reservoir Design System | My work | Martin Brutvan</title>
+     <description>The base for the UI/UX design and front-end development of web applications for the New York Public Library.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work/wes-strategic-plan</link>
+     <title>WES Strategic Plan | My work | Martin Brutvan</title>
+     <description>A non-traditional site design that required meticulous implementation of enhanced page builder tools.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work/martin-brutvan-portfolio</link>
+     <title>Martin Brutvan Portfolio | My work | Martin Brutvan</title>
+     <description>A project that I took from design to deployment and allowed me to work with some new tools.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work/baacf</link>
+     <title>Binghamton Arts &amp;amp; Athletics Community Fund | My work | Martin Brutvan</title>
+     <description>A fast moving project that required a large set of deliverables.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work/dreitonal</link>
+     <title>Dreitonal | My work | Martin Brutvan</title>
+     <description>A multilingual WordPress website with JavaScript enhanced navigation.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work/agw-events</link>
+     <title>AGW Events | My work | Martin Brutvan</title>
+     <description>A scalable event registration portal with backend utilities for site administration and reporting.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/work/the-count-a-musical</link>
+     <title>The Count, A Musical | My work | Martin Brutvan</title>
+     <description>There&amp;#x27;s nothing like helping a friend take a personal project from a college muse to an off-broadway production.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/download/Example-Governance-Doc.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://martin-brutvan-portfolio.vercel.app/download/Example-Spec-Doc.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
