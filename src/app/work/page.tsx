@@ -17,12 +17,13 @@ export default function Work() {
       isActive && (
         <>
           <ProjectCard
-            thumbnail={thumbnail}
+            aria-label={`Project details: ${title}`}
             key={`project_card_${i}`}
             skills={skills}
             slug={slug}
             summary={summary}
             title={title}
+            thumbnail={thumbnail}
           />
         </>
       )
@@ -49,9 +50,7 @@ export default function Work() {
         <strong>stakeholders</strong>, or use language that is explicit to{" "}
         <strong>engineers</strong> or <strong>designers</strong>.
       </p>
-      <div className="grid grid-cols w-full gap-16">
-        {workList}
-      </div>
+      <div className="grid grid-cols w-full gap-16">{workList}</div>
     </>
   );
 }
