@@ -27,3 +27,6 @@
 .image {
   @apply w-full h-72 md:h-auto object-contain bg-light-surface-cardimage;
 }
+.psuedolink {
+  @apply px-3 py-2 border-2 border-light-border-skill rounded-md uppercase w-fit font-bold leading-none text-[14px];
+}

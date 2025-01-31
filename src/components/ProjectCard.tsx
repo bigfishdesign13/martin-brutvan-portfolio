@@ -68,6 +68,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         </Heading>
         <SkillsList skills={skills} />
         <p>{summary}</p>
+        <p className={styles.psuedolink}>Project details</p>
       </div>
     </a>
   );
