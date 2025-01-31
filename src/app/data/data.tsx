@@ -380,7 +380,7 @@ const data: WorkDataProps = {
       slug: "nypl-reservoir-design-system",
       summary:
         "The base for the UI/UX design and front-end development of web applications for the New York Public Library.",
-      thumbnail: "/images/work/reservoir-thumbnail.svg",
+      thumbnail: "/images/work/reservoir-thumbnail.png",
       title: "NYPL Reservoir Design System",
     },
     // WES
@@ -725,7 +725,7 @@ const data: WorkDataProps = {
       slug: "dreitonal",
       summary:
         "A multilingual WordPress website with JavaScript enhanced navigation.",
-      thumbnail: "/images/work/dreitonal-thumbnail.jpg",
+      thumbnail: "/images/work/dreitonal-thumbnail.png",
       title: "Dreitonal",
     },
     // ADN
@@ -838,7 +838,7 @@ const data: WorkDataProps = {
       slug: "agw-events",
       summary:
         "A scalable event registration portal with backend utilities for site administration and reporting.",
-      thumbnail: "/images/work/agw-thumbnail.jpg",
+      thumbnail: "/images/work/agw-thumbnail.png",
       title: "AGW Events",
     },
     // The Count

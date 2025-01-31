@@ -51,15 +51,15 @@ const ProjectCard = (props: ProjectCardProps) => {
       <Image
         alt={`${title} thumbnail`}
         aria-hidden
-        className={styles.cardImage}
+        className={styles.image}
         height={480}
         src={thumbnail}
         width={480}
       />
       {/* <h3>{title}</h3> */}
-      <div>
+      <div className={styles.text}>
         <Heading
-          className={styles.cardHeading}
+          className={styles.heading}
           fontFamily="alt"
           level="h3"
           size="heading5"

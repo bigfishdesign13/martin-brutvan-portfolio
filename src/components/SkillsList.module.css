@@ -7,5 +7,5 @@
   color: white;
   display: block;
   white-space: nowrap;
-  @apply bg-light-surface-secondary text-light-bodytext-primary px-2 text-body2 rounded-sm border-light-border-secondary border-l-2;
+  @apply bg-light-surface-skill text-white px-2 text-body2 rounded-sm border-light-border-skill border-l-2;
 }
