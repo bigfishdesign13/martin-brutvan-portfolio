@@ -39,7 +39,7 @@ export default function Work() {
       >
         My work
       </Heading>
-      <p className="subheading1 mb-8">
+      <p className="subheading1 mb-16">
         With my skills spanning <strong>multiple disciplines</strong>, I have
         worked on projects where I am the sole contributor as well as projects
         where I fill specific design or engineering roles, depending on what is
@@ -49,7 +49,7 @@ export default function Work() {
         <strong>stakeholders</strong>, or use language that is explicit to{" "}
         <strong>engineers</strong> or <strong>designers</strong>.
       </p>
-      <div className="grid grid-cols md:grid-cols-2 w-full gap-16 md:gap-8">
+      <div className="grid grid-cols w-full gap-16">
         {workList}
       </div>
     </>

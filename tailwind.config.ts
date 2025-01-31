@@ -111,6 +111,7 @@ const config: Config = {
             primary: primatives.mahogany[200],
             secondary: primatives.cornflower[200],
             tertiary: primatives.cornflower[50],
+            skill: primatives.cornflower[900],
           },
           heading: {
             primary: primatives.mahogany[900],
@@ -125,7 +126,9 @@ const config: Config = {
             primary: primatives.cornflower[25],
             secondary: primatives.cornflower[50],
             tertiary: primatives.cornflower[100],
+            cardimage: primatives.cornflower[800],
             menu: primatives.mahogany[25],
+            skill: primatives.cornflower[400],
           },
         },
         background: "var(--background)",

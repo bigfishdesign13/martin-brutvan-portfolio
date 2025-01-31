@@ -1,37 +1,29 @@
 /* ProjectCard.module.css */
 
 .wrapper {
-  /* @apply bg-blue-700 text-white p-4 rounded-lg; */
-  /* background-color: red; */
-  /* display: grid; */
-  gap: 2rem;
-  grid-template-columns: 1fr 3fr;
-  @apply flex flex-col gap-2 md:gap-2;
-  transition: transform 250ms;
+  @apply grid md:grid-cols-2 items-center bg-light-surface-secondary;
+  /* transition: transform 250ms, box-shadow 250ms; */
+  transition: box-shadow 250ms;
   &:hover {
     /* transform: scale(1.015); */
-    .cardHeading {
-      @apply text-light-link-secondary;
-    }
-    .cardImage {
-      @apply shadow-lg;
-    }
+    @apply shadow-lg;
   }
   &:focus {
     /* transform: scale(1.015); */
-    .cardHeading {
-      @apply text-light-link-secondary;
-    }
-    .cardImage {
-      @apply shadow-lg;
+    @apply shadow-lg;
+  }
+  &:nth-child(even) {
+    .image {
+      @apply order-none md:order-1;
     }
   }
 }
-.cardHeading {
-  transition: color 250ms;
-  @apply mb-2 text-light-link-primary;
+.text {
+  @apply p-8;
 }
-.cardImage {
-  transition: box-shadow 250ms;
-  @apply w-full border border-light-border-secondary object-contain bg-white rounded-md;
+.heading {
+  @apply mb-2 text-light-heading-secondary;
+}
+.image {
+  @apply w-full h-72 md:h-auto object-contain bg-light-surface-cardimage;
 }
