@@ -1,0 +1,36 @@
+/* Header.module.css */
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  95% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.mainWrapper {
+  @apply fixed flex justify-center w-full p-4 transition-all duration-300;
+}
+.container {
+  @apply flex flex-col md:flex-row w-full max-w-screen-xl md:justify-between items-center;
+}
+.logoWrapper {
+  @apply flex items-center justify-between w-full mb-2 md:mb-0;
+}
+.logoLink {
+  @apply flex items-center gap-2;
+}
+.logoInitials {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  animation-timing-function: ease-in-out;
+  @apply h-12 md:h-16 w-12 md:w-16;
+}
+.socialLinks {
+  @apply block md:hidden;
+}
