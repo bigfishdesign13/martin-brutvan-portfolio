@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "./SocialLinks";
 import { useScrollPosition } from "../hooks/useScrollPosition";
+import styles from "./Header.module.css";
 
 const Header = () => {
   const scrollPosition = useScrollPosition();
@@ -15,20 +16,18 @@ const Header = () => {
       : "bg-light-surface-primary";
 
   return (
-    <header
-      className={`fixed flex justify-center w-full p-4 transition-all duration-300 ${scrollClass}`}
-    >
-      <div className="flex flex-col md:flex-row w-full max-w-screen-xl md:justify-between items-center">
-        <div className="flex items-center justify-between w-full mb-2 md:mb-0">
+    <header className={`${styles.mainWrapper} ${scrollClass}`}>
+      <div className={styles.container}>
+        <div className={styles.logoWrapper}>
           <Link
             aria-label="Go to the home page"
-            className="flex items-center gap-2"
+            className={styles.logoLink}
             href="/"
           >
             <Image
               alt="MB"
               aria-hidden
-              className="h-12 md:h-16 w-12 md:w-16"
+              className={styles.logoInitials}
               height={64}
               priority
               src="/images/icon-mb-desktop.svg"
@@ -44,7 +43,7 @@ const Header = () => {
               width={480}
             />
           </Link>
-          <div className="block md:hidden">
+          <div className={styles.socialLinks}>
             <SocialLinks />
           </div>
         </div>
