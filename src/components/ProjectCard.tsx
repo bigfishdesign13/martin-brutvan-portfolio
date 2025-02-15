@@ -61,7 +61,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         <Heading
           className={styles.heading}
           fontFamily="alt"
-          level="h3"
+          level="h2"
           size="heading5"
         >
           {title}
