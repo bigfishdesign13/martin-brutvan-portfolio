@@ -681,6 +681,63 @@ const data: WorkDataProps = {
       thumbnail: "/images/work/baacf-thumbnail.jpg",
       title: "Binghamton Arts & Athletics Community Fund",
     },
+    // Code Playground
+    {
+      fullStory: (
+        <>
+          <Heading className="mt-8" fontFamily="alt" size="heading4">
+            Links
+          </Heading>
+          <ul className="mt-4">
+            <li>
+              <Link
+                href="https://code-playground-mu.vercel.app"
+                target="_blank"
+              >
+                Code Playground website
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://github.com/bigfishdesign13/code-playground"
+                target="_blank"
+              >
+                GitHub repo
+              </Link>
+            </li>
+          </ul>
+        </>
+      ),
+      heroImage: {
+        alt: "Code Playground",
+        src: "/images/work/code-playground-hero.png",
+      },
+      introduction: (
+        <>
+          I am often working on components and ideas that would be best
+          demostrated with a functional prototype. I use my Code Playground site
+          for testing new ideas and experimenting with code to validate concepts
+          that incorporate technical aspects involving accessibility, CSS
+          animations, container qiueries, and more. The site is always evolving
+          and constantly in flux.
+        </>
+      ),
+      isActive: true,
+      skills: [
+        "Accessibility",
+        "Visual design",
+        "HTML",
+        "NextJS",
+        "React",
+        "Typescript",
+        "Panda CSS",
+        "Prototyping",
+      ],
+      slug: "code-playground",
+      summary: "A dedicated project for experimentation and prototyping.",
+      thumbnail: "/images/work/code-playground-thumbnail.png",
+      title: "Code Playground",
+    },
     // Dreitonal
     {
       fullStory: (

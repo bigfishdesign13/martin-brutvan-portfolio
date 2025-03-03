@@ -14,6 +14,7 @@ export type SkillTypes =
   | "Logo design"
   | "mySQL"
   | "NextJS"
+  | "Panda CSS"
   | "Photography"
   | "PHP"
   | "Print design"
