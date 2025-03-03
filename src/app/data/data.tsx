@@ -715,11 +715,12 @@ const data: WorkDataProps = {
       introduction: (
         <>
           I am often working on components and ideas that would be best
-          demostrated with a functional prototype. I use my Code Playground site
-          for testing new ideas and experimenting with code to validate concepts
-          that incorporate technical aspects involving accessibility, CSS
-          animations, container qiueries, and more. The site is always evolving
-          and constantly in flux.
+          demostrated with <strong>functional prototypes</strong>. I use my Code
+          Playground site for testing new ideas and experimenting with code to
+          validate concepts that incorporate technical aspects involving{" "}
+          <strong>accessibility</strong>, <strong>CSS animations</strong>,{" "}
+          <strong>container queries</strong>, and more. The site is always
+          evolving and constantly in flux.
         </>
       ),
       isActive: true,
