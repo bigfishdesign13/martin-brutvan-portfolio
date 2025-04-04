@@ -3,6 +3,7 @@ import Heading from "../../../components/Heading";
 import ProjectHeroImage from "../../../components/ProjectHeroImage";
 import SkillsList from "../../../components/SkillsList";
 import data, { WorkItemProps } from "../../data/data";
+import styles from "@/app/page.module.css";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -57,19 +58,25 @@ async function Page({ params }: { params: Promise<{ slug: string }> }) {
   return (
     <>
       <Heading
-        className="text-light-heading-secondary mb-4 leading-[1.2]"
+        className={`text-light-heading-secondary mb-4 leading-[1.2] ${styles.name}`}
         fontFamily="alt"
         level="h1"
         size="heading3"
       >
         {title}
       </Heading>
-      <SkillsList skills={skills} />
-      <ProjectHeroImage alt={heroImage.alt} src={heroImage.src} />
+      <div className={styles.pageContent1}>
+        <SkillsList skills={skills} />
+      </div>
+      <ProjectHeroImage
+        alt={heroImage.alt}
+        className={styles.pageContent2}
+        src={heroImage.src}
+      />
       {introduction && (
-        <p className="subheading1">{introduction}</p>
+        <p className={`subheading1 ${styles.pageContent3}`}>{introduction}</p>
       )}
-      <div className="full-story">{fullStory}</div>
+      <div className={`full-story ${styles.pageContent4}`}>{fullStory}</div>
     </>
   );
 }
