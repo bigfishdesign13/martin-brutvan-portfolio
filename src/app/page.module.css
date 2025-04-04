@@ -1,0 +1,107 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translate(128px, 0);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translate(0, 64px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+.name {
+  animation-delay: 500ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: fadeIn, slideInLeft;
+  animation-timing-function: cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+.title {
+  animation-delay: 650ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: fadeIn, slideUp;
+  animation-timing-function: cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+.list {
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: fadeIn, slideInLeft;
+  animation-timing-function: cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+.list1 {
+  animation-delay: 1200ms;
+}
+.list2 {
+  animation-delay: 1300ms;
+}
+.list3 {
+  animation-delay: 1400ms;
+}
+.list4 {
+  animation-delay: 1500ms;
+}
+.list5 {
+  animation-delay: 1600ms;
+}
+
+@keyframes borderGrow {
+  from {
+    border-left-width: 0;
+  }
+  to {
+    border-left-width: 12px;
+  }
+}
+.border {
+  animation-delay: 2200ms;
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: borderGrow;
+  animation-timing-function: cubic-bezier(0.47, 2, 0.41, 0.8);
+}
+@media (max-width: 600px) {
+  .borderMobile {
+    animation-delay: 2200ms;
+    animation-duration: 400ms;
+    animation-fill-mode: both;
+    animation-name: borderGrow;
+    animation-timing-function: cubic-bezier(0.47, 2, 0.41, 0.8);
+  }
+}
+.pageContent {
+  animation-duration: 400ms;
+  animation-fill-mode: both;
+  animation-name: fadeIn, slideUp;
+  animation-timing-function: cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+.pageContent1 {
+  composes: pageContent;
+  animation-delay: 650ms;
+}
+.pageContent2 {
+  composes: pageContent;
+  animation-delay: 750ms;
+}
+.pageContent3 {
+  composes: pageContent;
+  animation-delay: 850ms;
+}
+.pageContent4 {
+  composes: pageContent;
+  animation-delay: 950ms;
+}

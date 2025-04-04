@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Heading from "../../components/Heading";
 import ProjectCard from "../../components/ProjectCard";
 import data, { WorkItemProps } from "../data/data";
+import styles from "../page.module.css";
 
 export const metadata: Metadata = {
   title: "My work | Martin Brutvan",
@@ -33,14 +34,14 @@ export default function Work() {
   return (
     <>
       <Heading
-        className="text-light-heading-secondary mb-6 leading-[1.2]"
+        className={`text-light-heading-secondary mb-6 leading-[1.2] ${styles.name}`}
         fontFamily="alt"
         level="h1"
         size="heading3"
       >
         My work
       </Heading>
-      <p className="subheading1 mb-16">
+      <p className={`subheading1 mb-16 ${styles.pageContent1}`}>
         With my skills spanning <strong>multiple disciplines</strong>, I have
         worked on projects where I am the sole contributor as well as projects
         where I fill specific design or engineering roles, depending on what is
@@ -50,7 +51,9 @@ export default function Work() {
         <strong>stakeholders</strong>, or use language that is explicit to{" "}
         <strong>engineers</strong> or <strong>designers</strong>.
       </p>
-      <div className="grid grid-cols w-full gap-16">{workList}</div>
+      <div className={`grid grid-cols w-full gap-16 ${styles.pageContent2}`}>
+        {workList}
+      </div>
     </>
   );
 }

@@ -60,7 +60,7 @@
 }
 
 .mainWrapper {
-  @apply fixed flex justify-center w-full p-4 transition-all duration-300;
+  @apply fixed flex justify-center w-full p-4 transition-all duration-300 z-10;
 }
 .container {
   @apply flex flex-col md:flex-row w-full max-w-screen-xl md:justify-between items-center;
