@@ -47,9 +47,11 @@ export default function Work() {
         where I fill specific design or engineering roles, depending on what is
         needed. In either scenario, I am able to{" "}
         <strong>communicate effectively</strong> regardless of the
-        audience&mdash;I streamline and distill complex information for{" "}
-        <strong>stakeholders</strong>, or use language that is explicit to{" "}
-        <strong>engineers</strong> or <strong>designers</strong>.
+        audience&mdash;I can streamline and distill complex information for{" "}
+        <strong>stakeholders</strong>, discuss and refine technical project
+        requirements with <strong>engineers</strong>, or organize affinity
+        diagrams with <strong>product designers</strong> and determine how those
+        findings will influence user flows.
       </p>
       <div className={`grid grid-cols w-full gap-16 ${styles.pageContent2}`}>
         {workList}

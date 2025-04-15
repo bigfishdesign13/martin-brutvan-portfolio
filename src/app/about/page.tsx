@@ -33,12 +33,15 @@ export default function About() {
           </Heading>
           <div className={styles.pageContent1}>
             <p className="subheading1 mb-6">
-              I am a seasoned <strong>design technologist</strong> with
-              extensive experience in <strong>visual and UX design</strong>,{" "}
-              <strong>web development</strong>, and{" "}
-              <strong>accessibility</strong>. I work seamlessly with both
-              designers and engineers, often bridging the gap between the two
-              disciplines to bring people together and solve problems as a team.
+              I have been a web designer and front-end developer for the bulk of
+              my career, utilizing <strong>human-centered design</strong> and{" "}
+              <strong>systems thinking</strong> to solve problems throughout all
+              phases of a project life-cycle. My fine arts and design background
+              along with my proficiency in modern web development technologies
+              allow me to <strong>collaborate</strong> with product design and
+              engineering teams and effectively contribute on both fronts, while
+              my excellent <strong>communication skills</strong> foster and
+              facilitate cross-discipline cooperation and dialogue.
             </p>
             <p className="mb-6">
               Most recently, my focus has been on design systems and the
@@ -55,7 +58,7 @@ export default function About() {
               Independently, I am often working on WordPress projects, handling
               all aspects of the web development cycle from start to
               finish&mdash;including designing wireframes and mockups, coding
-              custom themes and page templates, configuring hosting and
+              custom themes and page templates, configuring hosting, and
               deploying the final product.
             </p>
           </div>
