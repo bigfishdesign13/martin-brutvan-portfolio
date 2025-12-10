@@ -39,7 +39,7 @@ const Header = () => {
               className="hidden"
               height={480}
               priority
-              src="/images/icon-mobile.svg"
+              src="/images/icon-mb-mobile.svg"
               width={480}
             />
           </Link>
