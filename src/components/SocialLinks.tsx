@@ -10,6 +10,7 @@ const SocialLinks = () => {
         aria-label="Visit my LinkedIn profile"
         className={styles.link}
         href="https://linkedin.com/in/martybrutvan/"
+        key="social_1"
         target="_blank"
       >
         <Image
@@ -25,6 +26,7 @@ const SocialLinks = () => {
         aria-label="Visit my GitHub profile"
         className={styles.link}
         href="https://github.com/bigfishdesign13"
+        key="social_2"
         target="_blank"
       >
         <Image
