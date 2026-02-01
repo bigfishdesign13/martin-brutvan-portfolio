@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export const primatives = {
+export const primitives = {
   gray: {
     "25": "#F1F1F1",
     "50": "#E0E0E0",
@@ -104,31 +104,31 @@ const config: Config = {
         // Semantic Tokens
         light: {
           bodytext: {
-            primary: primatives.gray[900],
-            seconday: primatives.gray[800],
+            primary: primitives.gray[900],
+            seconday: primitives.gray[800],
           },
           border: {
-            primary: primatives.mahogany[200],
-            secondary: primatives.cornflower[200],
-            tertiary: primatives.cornflower[50],
-            skill: primatives.cornflower[900],
+            primary: primitives.mahogany[200],
+            secondary: primitives.cornflower[200],
+            tertiary: primitives.cornflower[50],
+            skill: primitives.cornflower[900],
           },
           heading: {
-            primary: primatives.mahogany[900],
-            secondary: primatives.cornflower[900],
-            tertiary: primatives.cornflower[500],
+            primary: primitives.mahogany[900],
+            secondary: primitives.cornflower[900],
+            tertiary: primitives.cornflower[500],
           },
           link: {
-            primary: primatives.mahogany[700],
-            secondary: primatives.mahogany[900],
+            primary: primitives.mahogany[700],
+            secondary: primitives.mahogany[900],
           },
           surface: {
-            primary: primatives.cornflower[25],
-            secondary: primatives.cornflower[50],
-            tertiary: primatives.cornflower[100],
-            cardimage: primatives.cornflower[800],
-            menu: primatives.mahogany[25],
-            skill: primatives.cornflower[400],
+            primary: primitives.cornflower[25],
+            secondary: primitives.cornflower[50],
+            tertiary: primitives.cornflower[100],
+            cardimage: primitives.cornflower[800],
+            menu: primitives.mahogany[25],
+            skill: primitives.cornflower[400],
           },
         },
         background: "var(--background)",
