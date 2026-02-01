@@ -1,0 +1,41 @@
+/* CalloutLink.module.css */
+
+.calloutLink {
+  @apply inline-flex items-center font-bold;
+
+  &:hover {
+    .iconContainer {
+      @apply scale-[1.15];
+    }
+  }
+  &:focus {
+    .iconContainer {
+      @apply scale-[1.15];
+    }
+  }
+  .iconContainer {
+    transition:
+      transform 250ms,
+      border-color 250ms;
+    @apply inline-flex justify-center w-12 h-12 me-2 p-2 border-light-border-calloutlink-default rounded-full border-4 bg-light-surface-calloutlink-default;
+  }
+  .icon {
+    @apply fill-light-heading-secondary;
+  }
+  &.reduced {
+    @apply font-normal;
+    .iconContainer {
+      @apply w-6 h-6 p-1 me-2 border-2 bg-light-surface-calloutlink-reduced;
+    }
+    &:hover {
+      .iconContainer {
+        @apply scale-[1.25];
+      }
+    }
+    &:focus {
+      .iconContainer {
+        @apply scale-[1.25];
+      }
+    }
+  }
+}

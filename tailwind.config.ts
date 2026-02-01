@@ -112,6 +112,10 @@ const config: Config = {
             secondary: primitives.cornflower[200],
             tertiary: primitives.cornflower[50],
             skill: primitives.cornflower[900],
+            calloutlink: {
+              default: primitives.cornflower[50],
+              hover: primitives.cornflower[400],
+            },
           },
           heading: {
             primary: primitives.mahogany[900],
@@ -126,6 +130,10 @@ const config: Config = {
             primary: primitives.cornflower[25],
             secondary: primitives.cornflower[50],
             tertiary: primitives.cornflower[100],
+            calloutlink: {
+              default: primitives.cornflower[200],
+              reduced: primitives.cornflower[300],
+            },
             cardimage: primitives.cornflower[800],
             menu: primitives.mahogany[25],
             skill: primitives.cornflower[400],
