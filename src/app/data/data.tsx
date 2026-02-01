@@ -34,7 +34,7 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
+            <li key="reservoir_link_1">
               <Link
                 href="https://github.com/NYPL/nypl-design-system"
                 target="_blank"
@@ -42,7 +42,7 @@ const data: WorkDataProps = {
                 Reservoir GitHub repo
               </Link>
             </li>
-            <li>
+            <li key="reservoir_link_2">
               <Link
                 href="https://www.npmjs.com/package/@nypl/design-system-react-components"
                 target="_blank"
@@ -50,7 +50,7 @@ const data: WorkDataProps = {
                 Reservoir npm package
               </Link>
             </li>
-            <li>
+            <li key="reservoir_link_3">
               <Link
                 href="https://nypl.github.io/nypl-design-system/reservoir/v3"
                 target="_blank"
@@ -391,7 +391,7 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
+            <li key="wes_link_1">
               <Link href="https://wesstrategicplan.com" target="_blank">
                 WES Strategic Plan website
               </Link>
@@ -480,7 +480,7 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
+            <li key="portfolio_link_1">
               <Link
                 href="https://github.com/bigfishdesign13/martin-brutvan-portfolio"
                 target="_blank"
@@ -488,7 +488,7 @@ const data: WorkDataProps = {
                 GitHub repo
               </Link>
             </li>
-            <li>
+            <li key="portfolio_link_2">
               <Link
                 href="https://www.figma.com/design/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?node-id=0-1&t=A5LVbkqGSxDqVMme-1"
                 target="_blank"
@@ -496,7 +496,7 @@ const data: WorkDataProps = {
                 Figma designs
               </Link>
             </li>
-            <li>
+            <li key="portfolio_link_3">
               <Link
                 href="https://www.figma.com/proto/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?page-id=0%3A1&node-id=1-2&p=f&viewport=438%2C49%2C0.25&t=Yj7omQRz3wtQhFrf-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1"
                 target="_blank"
@@ -548,7 +548,7 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
+            <li key="baacf_link_1">
               <Link href="https://baacf.com" target="_blank">
                 BAACF website
               </Link>
@@ -689,7 +689,7 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
+            <li key="code_playground_link_1">
               <Link
                 href="https://code-playground-mu.vercel.app"
                 target="_blank"
@@ -697,7 +697,7 @@ const data: WorkDataProps = {
                 Code Playground website
               </Link>
             </li>
-            <li>
+            <li key="code_playground_link_2">
               <Link
                 href="https://github.com/bigfishdesign13/code-playground"
                 target="_blank"
@@ -747,7 +747,7 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
+            <li key="dreitonal_link_1">
               <Link href="https://dreitonal.at" target="_blank">
                 Dreitonal website
               </Link>
