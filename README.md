@@ -28,8 +28,8 @@ mych about the CSS framework, but I had never used. So, off I went.
 I was aiming to align design tokens in my app with the styles and tokens used in
 the Figma designs. I was able wrangle Tailwind to do what I wanted, but I found
 it odd that there didn't seem to be an foundational method to add design
-primatives. I finally added custom objects to house the primatives in
-`tailwind.config.ts` which then allowed me to use the primative values when
+primitives. I finally added custom objects to house the primitives in
+`tailwind.config.ts` which then allowed me to use the primitive values when
 customizing and extending the Trailwind styles. It was a fine solution.
 
 After working with the Trailwind methodologies for a while, I decided I did not

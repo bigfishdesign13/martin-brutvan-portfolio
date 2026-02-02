@@ -3,13 +3,13 @@
 .wrapper {
   @apply grid md:grid-cols-2 items-center bg-light-surface-secondary;
   /* transition: transform 250ms, box-shadow 250ms; */
-  transition: box-shadow 250ms;
+  transition: box-shadow 250ms, transform 250ms;
   &:hover {
-    /* transform: scale(1.015); */
+    transform: scale(1.01);
     @apply shadow-lg;
   }
   &:focus {
-    /* transform: scale(1.015); */
+    transform: scale(1.01);
     @apply shadow-lg;
   }
   &:nth-child(even) {

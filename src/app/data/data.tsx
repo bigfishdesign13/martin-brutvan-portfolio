@@ -1,6 +1,7 @@
 import Heading from "../../components/Heading";
 import Image from "next/image";
 import Link from "next/link";
+import CalloutLink from "../../components/CalloutLink";
 import { SkillTypes } from "../../components/SkillsList";
 
 export interface HeroImageProps {
@@ -34,29 +35,41 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
-              <Link
+            <li key="reservoir_link_1">
+              <CalloutLink
+                className="my-1"
+                id="reservoir-github-repo-link"
                 href="https://github.com/NYPL/nypl-design-system"
-                target="_blank"
-              >
-                Reservoir GitHub repo
-              </Link>
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="Reservoir GitHub repo"
+                reduced
+              />
             </li>
-            <li>
-              <Link
+            <li key="reservoir_link_2">
+              <CalloutLink
+                className="my-1"
+                id="reservoir-npm-package-link"
                 href="https://www.npmjs.com/package/@nypl/design-system-react-components"
-                target="_blank"
-              >
-                Reservoir npm package
-              </Link>
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="Reservoir npm package"
+                reduced
+              />
             </li>
-            <li>
-              <Link
-                href="https://nypl.github.io/nypl-design-system/reservoir/v3"
-                target="_blank"
-              >
-                Reservoir Storybook
-              </Link>
+            <li key="reservoir_link_3">
+              <CalloutLink
+                className="my-1"
+                id="reservoir-storybook-link"
+                href="https://nypl.github.io/nypl-design-system/reservoir/v4"
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="Reservoir Storybook"
+                reduced
+              />
             </li>
           </ul>
 
@@ -147,25 +160,15 @@ const data: WorkDataProps = {
             responsibilities clarified, easily understand how it will move
             forward.
           </p>
-          <p>
-            <Link
-              href="/download/Example-Governance-Doc.pdf"
-              target="_blank"
-              className="inline-flex items-center font-bold"
-            >
-              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
-                <Image
-                  alt="List icon"
-                  aria-hidden="true"
-                  src="/images/icon-list.svg"
-                  height={24}
-                  width={24}
-                  className="fill-light-heading-secondary"
-                />
-              </span>
-              Governance doc example
-            </Link>
-          </p>
+          <CalloutLink
+            className="mt-4"
+            id="governance-doc-example"
+            href="/download/Example-Governance-Doc.pdf"
+            newWindow={true}
+            icon="/images/icon-list.svg"
+            iconAlt="List icon"
+            linkText="Governance doc example"
+          />
           <p>
             Every component in the design system has a written source of truth
             referred to as a specification document, or spec doc. The spec doc
@@ -175,25 +178,15 @@ const data: WorkDataProps = {
             doc is used as a resource for both component visual design and React
             development.
           </p>
-          <p>
-            <Link
-              href="/download/Example-Spec-Doc.pdf"
-              target="_blank"
-              className="inline-flex items-center font-bold"
-            >
-              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
-                <Image
-                  alt="Document icon"
-                  aria-hidden="true"
-                  src="/images/icon-doc.svg"
-                  height={24}
-                  width={24}
-                  className="fill-light-heading-secondary"
-                />
-              </span>
-              Spec doc example
-            </Link>
-          </p>
+          <CalloutLink
+            className="mt-4"
+            id="spec-doc-example"
+            href="/download/Example-Spec-Doc.pdf"
+            newWindow={true}
+            icon="/images/icon-doc.svg"
+            iconAlt="Document icon"
+            linkText="Spec doc example"
+          />
           <p>
             The display page for a component in Reservoir&apos;s visual design
             library not only shows all of a component&apos;s variants, it also
@@ -203,24 +196,15 @@ const data: WorkDataProps = {
             coded version of a component in Storybook, the front-end display for
             Reservoir&apos;s React component library.
           </p>
-          <p>
-            <Link
-              href="https://www.figma.com/design/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?node-id=142-881&t=qtMa4HaPW8HU4dJd-11"
-              target="_blank"
-              className="inline-flex items-center font-bold"
-            >
-              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
-                <Image
-                  alt="Design icon"
-                  aria-hidden="true"
-                  src="/images/icon-design.svg"
-                  height={24}
-                  width={24}
-                />
-              </span>
-              Figma display page example
-            </Link>
-          </p>
+          <CalloutLink
+            className="mt-4"
+            id="figma-display-page-example"
+            href="https://www.figma.com/design/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?node-id=142-881&t=qtMa4HaPW8HU4dJd-11"
+            newWindow={true}
+            icon="/images/icon-design.svg"
+            iconAlt="Design icon"
+            linkText="Figma display page example"
+          />
           <p>
             Similarly, the documentation for each component in the design system
             explains how a component is intended to be used, detailing the UX
@@ -236,25 +220,15 @@ const data: WorkDataProps = {
             and pattern library, and overarching accessibility standards and
             guidelines.
           </p>
-          <p>
-            <Link
-              href="https://nypl.github.io/nypl-design-system/reservoir/v3/?path=/docs/components-feedback-banner--docs"
-              target="_blank"
-              className="inline-flex items-center font-bold"
-            >
-              <span className="inline-flex justify-center w-12 h-12 me-2 p-2 border-light-surface-secondary rounded-full border-4 bg-light-border-secondary">
-                <Image
-                  alt="Website icon"
-                  aria-hidden="true"
-                  src="/images/icon-monitor.svg"
-                  height={24}
-                  width={24}
-                  className="fill-light-heading-secondary"
-                />
-              </span>
-              Storybook example
-            </Link>
-          </p>
+          <CalloutLink
+            className="mt-4"
+            id="storybook-example"
+            href="https://nypl.github.io/nypl-design-system/reservoir/v3/?path=/docs/components-feedback-banner--docs"
+            newWindow={true}
+            icon="/images/icon-monitor.svg"
+            iconAlt="Website icon"
+            linkText="Storybook example"
+          />
 
           <Heading className="mt-8" fontFamily="alt" size="heading4">
             Relationships
@@ -391,10 +365,17 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
-              <Link href="https://wesstrategicplan.com" target="_blank">
-                WES Strategic Plan website
-              </Link>
+            <li key="wes_link_1">
+              <CalloutLink
+                className="my-1"
+                id="wes-website-link"
+                href="https://wesstrategicplan.com"
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="WES Strategic Plan website"
+                reduced
+              />
             </li>
           </ul>
 
@@ -480,29 +461,41 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
-              <Link
+            <li key="portfolio_link_1">
+              <CalloutLink
+                className="my-1"
+                id="mbp-github-link"
                 href="https://github.com/bigfishdesign13/martin-brutvan-portfolio"
-                target="_blank"
-              >
-                GitHub repo
-              </Link>
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="GitHub repo"
+                reduced
+              />
             </li>
-            <li>
-              <Link
+            <li key="portfolio_link_2">
+              <CalloutLink
+                className="my-1"
+                id="mbp-figma-link"
                 href="https://www.figma.com/design/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?node-id=0-1&t=A5LVbkqGSxDqVMme-1"
-                target="_blank"
-              >
-                Figma designs
-              </Link>
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="Figma designs"
+                reduced
+              />
             </li>
-            <li>
-              <Link
+            <li key="portfolio_link_3">
+              <CalloutLink
+                className="my-1"
+                id="mbp-prototype-link"
                 href="https://www.figma.com/proto/tolU6cQwZMoP2SpmQQrAcI/Martin-Brutvan-%7C-Design-Technologist?page-id=0%3A1&node-id=1-2&p=f&viewport=438%2C49%2C0.25&t=Yj7omQRz3wtQhFrf-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1"
-                target="_blank"
-              >
-                Prototype for desktop
-              </Link>
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="Prototype for desktop"
+                reduced
+              />
             </li>
           </ul>
         </>
@@ -548,10 +541,17 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
-              <Link href="https://baacf.com" target="_blank">
-                BAACF website
-              </Link>
+            <li key="baacf_link_1">
+              <CalloutLink
+                className="my-1"
+                id="baacf-website-link"
+                href="https://baacf.com"
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="BAACF website"
+                reduced
+              />
             </li>
           </ul>
 
@@ -689,21 +689,29 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
-              <Link
+            <li key="code_playground_link_1">
+              <CalloutLink
+                className="my-1"
+                id="code-playground-website-link"
                 href="https://code-playground-mu.vercel.app"
-                target="_blank"
-              >
-                Code Playground website
-              </Link>
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="Code Playground website"
+                reduced
+              />
             </li>
-            <li>
-              <Link
+            <li key="code_playground_link_2">
+              <CalloutLink
+                className="my-1"
+                id="code-playground-github-link"
                 href="https://github.com/bigfishdesign13/code-playground"
-                target="_blank"
-              >
-                GitHub repo
-              </Link>
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="GitHub repo"
+                reduced
+              />
             </li>
           </ul>
         </>
@@ -715,7 +723,7 @@ const data: WorkDataProps = {
       introduction: (
         <>
           I am often working on components and ideas that would be best
-          demostrated with <strong>functional prototypes</strong>. I use my Code
+          demonstrated with <strong>functional prototypes</strong>. I use my Code
           Playground site for testing new ideas and experimenting with code to
           validate concepts that incorporate technical aspects involving{" "}
           <strong>accessibility</strong>, <strong>CSS animations</strong>,{" "}
@@ -747,10 +755,17 @@ const data: WorkDataProps = {
             Links
           </Heading>
           <ul className="mt-4">
-            <li>
-              <Link href="https://dreitonal.at" target="_blank">
-                Dreitonal website
-              </Link>
+            <li key="dreitonal_link_1">
+              <CalloutLink
+                className="my-1"
+                id="dreitonal-website-link"
+                href="https://dreitonal.at"
+                newWindow={true}
+                icon="/images/icon-external-link.svg"
+                iconAlt="External link icon"
+                linkText="Dreitonal website"
+                reduced
+              />
             </li>
           </ul>
 

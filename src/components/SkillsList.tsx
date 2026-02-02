@@ -46,9 +46,13 @@ export interface SkillsListProps {
 }
 
 const SkillsList = (props: SkillsListProps) => {
-  const { ariaLabel, skills, ...rest } = props;
+  const { ariaLabel, skills, id = "skills_list", ...rest } = props;
   const skillsList = skills.sort().map((skill, i) => (
-    <li className={styles.skill} key={`skill_${i}`}>
+    <li
+      className={styles.skill}
+      key={`${id}_skill_${i}`}
+      data-id={`${id}_skill_${i}`}
+    >
       {skill}
     </li>
   ));

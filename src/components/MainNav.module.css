@@ -1,7 +1,25 @@
 /* MainNav.module.css */
 
+.navList {
+  display: flex;
+  align-items: center;
+  /* gap: 1.5rem; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navListItem {
+  @apply border-l-2 border-light-border-tertiary first:border-l-0 last:border-l-0;
+}
+
 .navLink {
-  @apply py-1 px-8 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary leading-8 border-l-2 border-light-border-tertiary first:border-l-0;
+  /* @apply py-1 px-8 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary; */
+  @apply py-1 px-8 text-mainNavLinkSmallMobile sm:text-mainNavLinkLargeMobile md:text-mainNavLink text-light-link-primary hover:text-light-link-secondary hover:scale-150 duration-300;
+
+  &:hover {
+    /* transform: scale(1.15); */
+  }
 }
 .navDivider {
   @apply border-s-4 border-light-border-tertiary;

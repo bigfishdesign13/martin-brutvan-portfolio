@@ -16,17 +16,17 @@ export default function Work() {
     const { isActive, skills, slug, summary, thumbnail, title } = workItem;
     return (
       isActive && (
-        <>
+        <li key={`project_card_${i}`}>
           <ProjectCard
             aria-label={`Project details: ${title}`}
-            key={`project_card_${i}`}
+            data-id={`project_card_${i}`}
             skills={skills}
             slug={slug}
             summary={summary}
             title={title}
             thumbnail={thumbnail}
           />
-        </>
+        </li>
       )
     );
   });
@@ -53,9 +53,9 @@ export default function Work() {
         diagrams with <strong>product designers</strong> and determine how those
         findings will influence user flows.
       </p>
-      <div className={`grid grid-cols w-full gap-16 ${styles.pageContent2}`}>
+      <ul className={`grid grid-cols w-full gap-16 ${styles.pageContent2}`}>
         {workList}
-      </div>
+      </ul>
     </>
   );
 }

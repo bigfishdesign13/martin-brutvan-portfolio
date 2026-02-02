@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useId } from "react";
 import Heading from "./Heading";
 import Image from "next/image";
 import SkillsList, { SkillTypes } from "./SkillsList";
@@ -39,13 +39,15 @@ const ProjectCard = (props: ProjectCardProps) => {
   } = props;
   const finalHref = `/work/${slug}`;
   const finalAriaLabel = ariaLabel ? ariaLabel : title;
+  const specialId = useId();
+  const finalId = id ? id :specialId;
 
   return (
     <a
       aria-label={finalAriaLabel}
       className={`${className} ${styles.wrapper}`}
       href={finalHref}
-      id={id}
+      id={finalId}
       {...rest}
     >
       <Image
@@ -66,7 +68,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         >
           {title}
         </Heading>
-        <SkillsList skills={skills} />
+        <SkillsList skills={skills} id={`skills_list_${finalId}`} />
         <p>{summary}</p>
         <p className={styles.psuedolink}>Project details</p>
       </div>
